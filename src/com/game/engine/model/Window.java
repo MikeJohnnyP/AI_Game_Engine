@@ -4,6 +4,8 @@ import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
+import com.game.logger.EngineLogger;
+
 public class Window {
 	class WindowData {
 		int width, height;
@@ -18,6 +20,7 @@ public class Window {
 		windowData.width = spec.getWidth();
 		windowData.height = spec.getHeight();
 		windowData.title = spec.getTitle();
+		EngineLogger.Get().info("WindowData: " + spec.getWidth() + ", " + spec.getHeight() + ", "+ spec.getTitle());
 	}
 	
 	public boolean init() {

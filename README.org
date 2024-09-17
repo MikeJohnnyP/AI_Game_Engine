@@ -11,8 +11,10 @@ Engine dùng để phát triển game đối kháng, chú trọng vào việc ph
 *** Tiến độ dự án
 - TODO Phát triển khung sườn (core engine)
   - [X] Initial commit
-  - [ ] Application
-  - [ ] Logger
+  - [X] Application
+  - [-] Logger
+    - [X] JavaLogger
+    - [ ] NullLogger
   - [ ] Event
   - [ ] Input
   - [ ] 

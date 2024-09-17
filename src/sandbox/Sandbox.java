@@ -12,13 +12,13 @@ public class Sandbox extends Application {
 
 
 	@Override
-	public void ClientInit() {
+	public void clientInit() {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void ClienShutdown() {
+	public void clientShutdown() {
 		// TODO Auto-generated method stub
 		
 	}

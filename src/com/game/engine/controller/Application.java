@@ -2,6 +2,7 @@ package com.game.engine.controller;
 
 import com.game.engine.model.Window;
 import com.game.engine.model.WindowSpec;
+import com.game.logger.EngineLogger;
 
 public abstract class Application {
 	protected boolean isWindowClose;
@@ -16,21 +17,26 @@ public abstract class Application {
 	
 	
 	public boolean init() {
-		window.init();
-		
+		if(!window.init()) {
+			EngineLogger.Get().severe("Failed to init window");
+			return false;
+		} else
+			EngineLogger.Get().info("Init Window Sucess");
+			
+		EngineLogger.Get().info("Init Application Sucess");
 		return true;
 	}
-	public void run() {}
-	public void Shutdown() {}
+	
+	public void run() {
+	}
+	public void shutdown() {}
 	public void onEvent() {}
 	
 	public Window getWindow() {
 		return window;
 	}
 	
-	public abstract void ClientInit();
-	public abstract void ClienShutdown();
-	
-	
+	public abstract void clientInit();
+	public abstract void clientShutdown();
 	
 }
