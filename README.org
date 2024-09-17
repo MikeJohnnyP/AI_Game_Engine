@@ -1,0 +1,23 @@
+#+TITLE: AI Game Engine 
+#+DESCRIPTION: Game Engine developement especialy for smart enemies 
+#+STARTUP: showeverything 
+#+OPTIONS: toc:2
+
+Engine dùng để phát triển game đối kháng, chú trọng vào việc phát triển kẻ địch thông minh
+- Phát triển trên môi trường java
+
+** Mục Lục :toc:
+
+*** Tiến độ dự án
+- TODO Phát triển khung sườn (core engine)
+  - [X] Initial commit
+  - [ ] Application
+  - [ ] Logger
+  - [ ] Event
+  - [ ] Input
+  - [ ] 
+- Tiles editor
+- Triển khai đồ hoạ
+- AI
+...
+/comming soon/
