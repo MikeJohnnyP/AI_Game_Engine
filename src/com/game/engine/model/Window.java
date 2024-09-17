@@ -2,8 +2,11 @@ package com.game.engine.model;
 
 import java.awt.Dimension;
 
+import javax.swing.JComponent;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
+import com.game.engine.view.AView;
 import com.game.logger.EngineLogger;
 
 public class Window {
@@ -32,6 +35,7 @@ public class Window {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
 		frame.setLocationRelativeTo(null);
+		frame.pack();
 		frame.setVisible(true);
 		return true;
 	}
@@ -42,6 +46,18 @@ public class Window {
 	
 	public JFrame getWindow() {
 		return frame;
+	}
+
+	public void setComponent(AView view) {
+		try {
+			frame.add((JComponent)view);
+			EngineLogger.Get().info("Add Component: " + view.getClass().getName());
+		} catch (Exception e) {
+			EngineLogger.Get().severe("Exception: " + e.getMessage());
+		}
+		frame.revalidate();
+		frame.repaint();
+		
 	}
 	
 }

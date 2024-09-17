@@ -26,5 +26,6 @@ public class Sandbox extends Application {
 	public static void main(String[] args) {
 		Sandbox sandbox = new Sandbox(new WindowSpec(640, 480, "My Game"));
 		sandbox.init();
+		sandbox.run();
 	}
 }
