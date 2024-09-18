@@ -7,12 +7,13 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import com.game.engine.view.AView;
+import com.game.event.EventDispatcher;
 import com.game.logger.EngineLogger;
 
 public class Window {
-	class WindowData {
-		int width, height;
-		String title;
+	public class WindowData {
+		public int width, height;
+		public String title;
 	}
 	
 	private WindowData windowData;
@@ -51,6 +52,9 @@ public class Window {
 	public void setComponent(AView view) {
 		try {
 			frame.add((JComponent)view);
+			view.setFocusable(true);
+			System.out.println(view.requestFocusInWindow());
+			System.out.println(view.isRequestFocusEnabled());
 			EngineLogger.Get().info("Add Component: " + view.getClass().getName());
 		} catch (Exception e) {
 			EngineLogger.Get().severe("Exception: " + e.getMessage());

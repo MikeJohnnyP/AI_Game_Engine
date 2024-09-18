@@ -15,7 +15,7 @@ Engine dùng để phát triển game đối kháng, chú trọng vào việc ph
   - [-] Logger
     - [X] JavaLogger
     - [ ] NullLogger
-  - [ ] Event
+  - [X] Event
   - [ ] Input
   - [ ] 
 - Tiles editor

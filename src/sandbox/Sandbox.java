@@ -5,8 +5,7 @@ import com.game.engine.model.WindowSpec;
 
 public class Sandbox extends Application {
 	
-	public Sandbox(WindowSpec spec) {
-		super(spec);
+	public Sandbox() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -24,8 +23,8 @@ public class Sandbox extends Application {
 	}
 	
 	public static void main(String[] args) {
-		Sandbox sandbox = new Sandbox(new WindowSpec(640, 480, "My Game"));
-		sandbox.init();
-		sandbox.run();
+		Application.setInstance(new Sandbox());
+		Application.Get().init(new WindowSpec(640, 480, "My Game"));
+		Application.Get().run();
 	}
 }
