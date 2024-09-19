@@ -30,7 +30,6 @@ public class ViewComponent extends AView implements MouseListener, KeyListener, 
 	static boolean firstOpen = true;
 	public ViewComponent() {
 		this.setFocusable(true);
-		System.out.println(this.requestFocusInWindow());
 		this.setDoubleBuffered(true);
 		this.addMouseListener(this);
 		this.addMouseMotionListener(this);
@@ -42,7 +41,7 @@ public class ViewComponent extends AView implements MouseListener, KeyListener, 
 	protected void paintComponent(Graphics g) {
 		requestFocus(true);
 		Graphics2D g2d = (Graphics2D) g;
-		Color cl = Color.black;
+		Color cl = Color.red;
 		g2d.setColor(cl);
 		g2d.fillRect(0, 0, 640, 480);
 		super.paintComponent(g2d);

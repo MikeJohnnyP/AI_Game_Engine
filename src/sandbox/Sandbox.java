@@ -2,17 +2,24 @@ package sandbox;
 
 import com.game.engine.controller.Application;
 import com.game.engine.model.WindowSpec;
+import com.game.layer.Layer;
 
 public class Sandbox extends Application {
-	
-	public Sandbox() {
-		// TODO Auto-generated constructor stub
-	}
-
+	private Layer uiLayer;
+	private Layer gameLayer;
 
 	@Override
 	public void clientInit() {
-		// TODO Auto-generated method stub
+		uiLayer = new UILayer("Ui Layer", Layer.LayerType.Overlay);
+		gameLayer = new GameLayer("Game layer", Layer.LayerType.Standard);
+		pushLayer(gameLayer);
+		pushOverlay(uiLayer);
+		
+//		popLayer(gameLayer);
+//		popLayer(gameLayer);
+		
+		uiLayer.onAttach();
+		gameLayer.onAttach();
 		
 	}
 

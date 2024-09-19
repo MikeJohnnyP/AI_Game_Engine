@@ -15,6 +15,8 @@ import com.game.event.MousePressedEvent;
 import com.game.event.MouseReleasedEvent;
 import com.game.input.Keyboard;
 import com.game.input.Mouse;
+import com.game.layer.Layer;
+import com.game.layer.LayerStack;
 import com.game.logger.EngineLogger;
 
 public class Application {
@@ -23,6 +25,7 @@ public class Application {
 	private WindowSpec spec;
 	private AView view;
 	private EventDispatcher eventDispatcher;
+	private LayerStack layerStack;
 	
 	private static Application instance;
 	
@@ -49,6 +52,7 @@ public class Application {
 		this.spec = spec;
 		isWindowClose = true;
 		eventDispatcher = new EventDispatcher();
+		layerStack = new LayerStack();
 		window = new Window(spec);
 		view = new ViewComponent();
 		if(!window.init()) {
@@ -60,33 +64,49 @@ public class Application {
 			
 		EngineLogger.Get().info("Init Application Sucess");
 		
-		
 		eventDispatcher.addEventListener(MouseMovedEvent.class, this::mouseMoved);
 		eventDispatcher.addEventListener(KeyPressedEvent.class, this::keyPressed);
 		eventDispatcher.addEventListener(KeyReleasedEvent.class, this::keyReleased);
 		eventDispatcher.addEventListener(MousePressedEvent.class, this::mousePressed);
 		eventDispatcher.addEventListener(MouseReleasedEvent.class, this::mouseReleased);
 		
+		clientInit();
+		
 		return true;
+	}
+	public void shutdown() {}
+	
+	public void clientInit() {}
+	public void clientShutdown() {}
+	
+	public void pushLayer(Layer layer) {
+		layerStack.pushLayer(layer);
+	}
+	
+	public void pushOverlay(Layer overlay) {
+		layerStack.pushOverlay(overlay);
+	}
+	
+	public void popLayer(Layer layer) {
+		layerStack.popLayer(layer);
+	}
+	
+	public void popOverlay(Layer overlay) {
+		layerStack.popOverlay(overlay);
+	}
+	
+	public EventDispatcher getDispatcher() {
+		return eventDispatcher;
+	}
+	
+	public Window getWindow() {
+		return window;
 	}
 	
 	public void run() {
 		while(isWindowClose && true) {
 			view.repaint();
 		}
-	}
-	public void shutdown() {}
-	public void onEvent() {}
-	
-	public Window getWindow() {
-		return window;
-	}
-	
-	public void clientInit() {}
-	public void clientShutdown() {}
-	
-	public EventDispatcher getDispatcher() {
-		return eventDispatcher;
 	}
 	
 	public boolean mouseMoved(MouseMovedEvent e) {

@@ -51,10 +51,10 @@ public class Window {
 
 	public void setComponent(AView view) {
 		try {
-			frame.add((JComponent)view);
+			frame.add(view);
 			view.setFocusable(true);
-			System.out.println(view.requestFocusInWindow());
-			System.out.println(view.isRequestFocusEnabled());
+			view.requestFocusInWindow();
+			//System.out.println(view.isRequestFocusEnabled());
 			EngineLogger.Get().info("Add Component: " + view.getClass().getName());
 		} catch (Exception e) {
 			EngineLogger.Get().severe("Exception: " + e.getMessage());
