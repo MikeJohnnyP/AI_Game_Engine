@@ -9,6 +9,7 @@ import com.game.event.MousePressedEvent;
 import com.game.layer.Layer;
 import com.game.logger.EngineLogger;
 import com.game.renderer.RenderCommand;
+import com.game.time.TimeSteps;
 
 public class UILayer extends Layer {
 
@@ -31,7 +32,7 @@ public class UILayer extends Layer {
 	}
 
 	@Override
-	public void onUpdate() {
+	public void onUpdate(float deltaTime) {
 	}
 
 	@Override
@@ -42,13 +43,11 @@ public class UILayer extends Layer {
 	
 	@Override
 	protected boolean onKeyPressedEvent(KeyPressedEvent e) {
-		EngineLogger.Get().info("Ui Layer keyPressed");
 		return false;
 	}
 	
 	@Override
 	protected boolean onMousePressedEvent(MousePressedEvent e) {
-		EngineLogger.Get().info("Ui Layer mousePressed");
 		return false;
 	}
 

@@ -12,9 +12,11 @@ import com.game.input.Keyboard;
 import com.game.layer.Layer;
 import com.game.logger.EngineLogger;
 import com.game.renderer.RenderCommand;
+import com.game.time.TimeSteps;
 
 public class GameLayer extends Layer {
-	private Rectangle2D rect = new Rectangle2D.Double(50, 50, 200, 200);
+	private Rectangle2D rect = new Rectangle2D.Double(50.67, 50.75, 200.65, 200.54);
+	double x ,y;
 
 	protected GameLayer(String name, Layer.LayerType type) {
 		super(name, type);
@@ -23,6 +25,8 @@ public class GameLayer extends Layer {
 	@Override
 	public void onAttach() {
 		System.out.println("Game Layer attach");
+		x = 0;
+		y = 0;
 		Application.Get().getDispatcher().addEventListener(MousePressedEvent.class, this::onMousePressedEvent);
 		Application.Get().getDispatcher().addEventListener(KeyPressedEvent.class, this::onKeyPressedEvent);
 		
@@ -35,11 +39,12 @@ public class GameLayer extends Layer {
 	}
 
 	@Override
-	public void onUpdate() {
-		if(Keyboard.isKeyPressed(KeyEvent.VK_W)) rect.setFrame(rect.getX(), rect.getY() - 1, rect.getWidth(), rect.getHeight());
-		if(Keyboard.isKeyPressed(KeyEvent.VK_S)) rect.setFrame(rect.getX(), rect.getY() + 1, rect.getWidth(), rect.getHeight());
-		if(Keyboard.isKeyPressed(KeyEvent.VK_A)) rect.setFrame(rect.getX() - 1, rect.getY(), rect.getWidth(), rect.getHeight());
-		if(Keyboard.isKeyPressed(KeyEvent.VK_D)) rect.setFrame(rect.getX() + 1, rect.getY(), rect.getWidth(), rect.getHeight());
+	public void onUpdate(float deltaTime) {
+		double speed = 1000 * deltaTime; 
+		if(Keyboard.isKeyPressed(KeyEvent.VK_W)) rect.setFrame(rect.getX(), (rect.getY() - speed), rect.getWidth(), rect.getHeight());
+		if(Keyboard.isKeyPressed(KeyEvent.VK_S)) rect.setFrame(rect.getX(), (rect.getY() + speed), rect.getWidth(), rect.getHeight());
+		if(Keyboard.isKeyPressed(KeyEvent.VK_A)) rect.setFrame((rect.getX() - speed), rect.getY() , rect.getWidth(), rect.getHeight());
+		if(Keyboard.isKeyPressed(KeyEvent.VK_D)) rect.setFrame((rect.getX() + speed), rect.getY(), rect.getWidth(), rect.getHeight());
 	}
 
 	@Override
@@ -52,13 +57,11 @@ public class GameLayer extends Layer {
 	
 	@Override
 	protected boolean onKeyPressedEvent(KeyPressedEvent e) {
-		EngineLogger.Get().info("Game Layer keyPressed");
 		return false;
 	}
 	
 	@Override
 	protected boolean onMousePressedEvent(MousePressedEvent e) {
-		EngineLogger.Get().info("Game Layer mousePressed");
 		return false;
 	}
 

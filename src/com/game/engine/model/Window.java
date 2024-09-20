@@ -15,6 +15,7 @@ public class Window {
 	public class WindowData {
 		public int width, height;
 		public String title;
+		public int maxFPS;
 	}
 	
 	private WindowData windowData;
@@ -25,6 +26,7 @@ public class Window {
 		windowData.width = spec.getWidth();
 		windowData.height = spec.getHeight();
 		windowData.title = spec.getTitle();
+		windowData.maxFPS = spec.getMaxFPS();
 		EngineLogger.Get().info("WindowData: " + spec.getWidth() + ", " + spec.getHeight() + ", "+ spec.getTitle());
 	}
 	

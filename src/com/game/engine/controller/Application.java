@@ -5,7 +5,9 @@ import java.awt.BufferCapabilities;
 import java.awt.ImageCapabilities;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
+import java.time.Instant;
 
+import com.game.engine.model.PerFrameData;
 import com.game.engine.model.Window;
 import com.game.engine.model.WindowSpec;
 import com.game.engine.view.AView;
@@ -22,6 +24,7 @@ import com.game.input.Mouse;
 import com.game.layer.Layer;
 import com.game.layer.LayerStack;
 import com.game.logger.EngineLogger;
+import com.game.time.TimeSteps;
 
 public class Application {
 	private boolean isWindowClose;
@@ -31,6 +34,8 @@ public class Application {
 	private MyCanvas canvas;
 	private EventDispatcher eventDispatcher;
 	private LayerStack layerStack;
+	private TimeSteps ts;
+	private PerFrameData frameData;
 	
 	private static Application instance;
 	
@@ -59,15 +64,15 @@ public class Application {
 		eventDispatcher = new EventDispatcher();
 		layerStack = new LayerStack();
 		window = new Window(spec);
-		view = new ViewComponent();
-		canvas = new MyCanvas(spec);
+		//view = new ViewComponent();
+		
 		if(!window.init()) {
 			EngineLogger.Get().severe("Failed to init window");
 			return false;
 		} else
 			EngineLogger.Get().info("Init Window Sucess");
 		//window.setComponent(view);
-		
+		canvas = new MyCanvas(spec);
 		 window.setCanvas(canvas);
 		BufferCapabilities bufferCapabilities = new BufferCapabilities(
                 new ImageCapabilities(true), 
@@ -88,8 +93,8 @@ public class Application {
 		eventDispatcher.addEventListener(KeyReleasedEvent.class, this::keyReleased);
 		eventDispatcher.addEventListener(MousePressedEvent.class, this::mousePressed);
 		eventDispatcher.addEventListener(MouseReleasedEvent.class, this::mouseReleased);
-		
-		clientInit();
+		ts = new TimeSteps(0.f, 1.f);
+		frameData = new PerFrameData();
 		
 		return true;
 	}
@@ -126,47 +131,57 @@ public class Application {
 		return layerStack;
 	}
 	
+	public TimeSteps getTimeSteps() {
+		return ts;
+	}
+	
 	public void run() {
+		clientInit();
+		final float MAX_DELTA_TIME = 0.05f;
+		final double minDeltaTime = 1_000_000_000.0 / spec.getMaxFPS();
+		long lastFrameTime = System.nanoTime();
+		
 		while(isWindowClose && true) {
-			for(Layer layer : layerStack.Get()) {
-				layer.onUpdate();;
+			while (System.nanoTime() - lastFrameTime < minDeltaTime);
+			long currentFrameTime = System.nanoTime();
+			
+			ts.setDeltaTime((currentFrameTime - lastFrameTime)/1_000_000_000.0); 
+			//System.out.println(ts);
+			
+			lastFrameTime = currentFrameTime;
+			
+			while (ts.getDeltaTime() > MAX_DELTA_TIME) {
+				frameData.IsCatchUpPhase = true;
+
+				for (Layer layer : layerStack.Get()) {
+					layer.onUpdate(MAX_DELTA_TIME);
+				}
+				ts.setDeltaTime(ts.getDeltaTime() - MAX_DELTA_TIME);
 			}
+			frameData.IsCatchUpPhase = false;
+			
+			for(Layer layer : layerStack.Get()) {
+				layer.onUpdate(ts.getTimeSpeed());
+			}
+			frameData.FrameIndex++;
 			canvas.onRender();
 		}
+		clientShutdown();
 	}
 	
 	public boolean mouseMoved(MouseMovedEvent e) {
-//		System.out.println("xPos: " + Mouse.getPosX());
-//		System.out.println("yPos: " + Mouse.getPosY());
-//		System.out.println("xOffset: " + Mouse.getXOffset());
-//		System.out.println("yOffset: " + Mouse.getYOffset());
 		return false;
 	}
 	
 	boolean keyPressed(KeyPressedEvent e) {
-		if(Keyboard.isKeyPressed(KeyEvent.VK_ESCAPE)) {
-			System.out.println("Escape is pressed");
-		}
-		if(Keyboard.isKeyPressed(KeyEvent.VK_1)) {
-			System.out.println("1 is pressed");
-		}
 		return false;
 	}
 	
 	boolean keyReleased(KeyReleasedEvent e) {
-		if(Keyboard.isKeyReleased(KeyEvent.VK_ESCAPE)) {
-			System.out.println("Escape is released");
-		}
-		if(Keyboard.isKeyReleased(KeyEvent.VK_1)) {
-			System.out.println("1 is released");
-		}
 		return false;
 	}
 	
 	boolean mousePressed(MousePressedEvent e) {
-		if(Mouse.isMousePressed(MouseEvent.BUTTON1)) {
-			System.out.println("Mouse left is pressed");
-		}
 		return false;
 	}
 	

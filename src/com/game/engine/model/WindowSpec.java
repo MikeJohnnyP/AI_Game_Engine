@@ -3,11 +3,13 @@ package com.game.engine.model;
 public class WindowSpec {
 	private int width, height;
 	private String title;
+	private int maxFPS;
 	
-	public WindowSpec(int width, int height, String title) {
+	public WindowSpec(int width, int height, String title, int maxFPS) {
 		this.width = width;
 		this.height = height;
 		this.title = title;
+		this.maxFPS = maxFPS;
 	}
 
 	public int getWidth() {
@@ -32,5 +34,13 @@ public class WindowSpec {
 
 	public void setTitle(String title) {
 		this.title = title;
+	}
+
+	public int getMaxFPS() {
+		return maxFPS;
+	}
+
+	public void setMaxFPS(int maxFPS) {
+		this.maxFPS = maxFPS;
 	}
 }

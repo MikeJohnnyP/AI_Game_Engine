@@ -8,6 +8,7 @@ import com.game.event.MouseMovedEvent;
 import com.game.event.MousePressedEvent;
 import com.game.event.MouseReleasedEvent;
 import com.game.event.MouseScrollEvent;
+import com.game.time.TimeSteps;
 
 public abstract class Layer {
 	public enum LayerType{
@@ -25,7 +26,7 @@ public abstract class Layer {
 	public abstract void onAttach();
 	public abstract void onDettach();
 	
-	public abstract void onUpdate();
+	public abstract void onUpdate(float deltaTime);
 	public abstract void onRender();
 	
 	protected boolean onKeyPressedEvent(KeyPressedEvent e) {return false;}
