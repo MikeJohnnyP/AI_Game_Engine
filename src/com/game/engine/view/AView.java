@@ -4,5 +4,6 @@ import javax.swing.JComponent;
 
 
 public abstract class AView extends JComponent {
+	public abstract void onRender();
 
 }

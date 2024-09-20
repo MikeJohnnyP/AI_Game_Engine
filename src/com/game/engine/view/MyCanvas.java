@@ -192,4 +192,8 @@ public class MyCanvas extends Canvas implements MouseListener, KeyListener, Mous
 		}	
 		
 	}
+	
+	public void onRender() {
+		this.paintComponent();
+	}
 }

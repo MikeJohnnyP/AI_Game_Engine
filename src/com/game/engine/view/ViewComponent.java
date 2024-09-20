@@ -179,4 +179,10 @@ public class ViewComponent extends AView implements MouseListener, KeyListener, 
 		}	
 		
 	}
+
+	@Override
+	public void onRender() {
+		this.repaint();
+		
+	}
 }

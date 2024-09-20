@@ -131,7 +131,7 @@ public class Application {
 			for(Layer layer : layerStack.Get()) {
 				layer.onUpdate();;
 			}
-			canvas.paintComponent();
+			canvas.onRender();
 		}
 	}
 	
