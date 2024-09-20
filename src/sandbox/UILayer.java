@@ -1,5 +1,6 @@
 package sandbox;
 
+import java.awt.Color;
 import java.awt.Graphics;
 
 import com.game.engine.controller.Application;
@@ -7,6 +8,7 @@ import com.game.event.KeyPressedEvent;
 import com.game.event.MousePressedEvent;
 import com.game.layer.Layer;
 import com.game.logger.EngineLogger;
+import com.game.renderer.RenderCommand;
 
 public class UILayer extends Layer {
 
@@ -30,13 +32,11 @@ public class UILayer extends Layer {
 
 	@Override
 	public void onUpdate() {
-		System.out.println("UI Layer update");
-		
 	}
 
 	@Override
-	public void onRender(Graphics g) {
-		// TODO Auto-generated method stub
+	public void onRender() {
+		RenderCommand.fillRect(0,0, 150, 150);
 		
 	}
 	

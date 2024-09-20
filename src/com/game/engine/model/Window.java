@@ -1,5 +1,6 @@
 package com.game.engine.model;
 
+import java.awt.Canvas;
 import java.awt.Dimension;
 
 import javax.swing.JComponent;
@@ -60,8 +61,21 @@ public class Window {
 			EngineLogger.Get().severe("Exception: " + e.getMessage());
 		}
 		frame.revalidate();
-		frame.repaint();
-		
+		frame.repaint();	
+	}
+	
+	public void setCanvas(Canvas canvas) {
+		try {
+			frame.add(canvas);
+			canvas.setFocusable(true);
+			canvas.requestFocusInWindow();
+			//System.out.println(view.isRequestFocusEnabled());
+			EngineLogger.Get().info("Add Canvas: " + canvas.getClass().getName());
+		} catch (Exception e) {
+			EngineLogger.Get().severe("Exception: " + e.getMessage());
+		}
+		frame.revalidate();
+		frame.repaint();	
 	}
 	
 }

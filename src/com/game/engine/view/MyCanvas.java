@@ -1,8 +1,9 @@
 package com.game.engine.view;
 
 
-import java.awt.Graphics;
+import java.awt.Canvas;
 import java.awt.Graphics2D;
+
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
@@ -10,11 +11,11 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
-
-
+import java.awt.image.BufferStrategy;
 
 import com.game.ObJectRelease;
 import com.game.engine.controller.Application;
+import com.game.engine.model.WindowSpec;
 import com.game.event.EventDispatcher;
 import com.game.event.KeyPressedEvent;
 import com.game.event.KeyReleasedEvent;
@@ -30,7 +31,8 @@ import com.game.logger.EngineLogger;
 import com.game.renderer.RenderCommand;
 import com.game.renderer.Renderer2D;
 
-public class ViewComponent extends AView implements MouseListener, KeyListener, MouseMotionListener, MouseWheelListener{
+public class MyCanvas extends Canvas implements MouseListener, KeyListener, MouseMotionListener, MouseWheelListener {
+
 	/**
 	 * 
 	 */
@@ -38,28 +40,39 @@ public class ViewComponent extends AView implements MouseListener, KeyListener, 
 	private static boolean firstOpen = true;
 	private static LayerStack layerStack;
 	
-	public ViewComponent() {
+	public MyCanvas(WindowSpec spec) {
 		super();
+		this.setSize(spec.getWidth(), spec.getHeight());
 		this.setFocusable(true);
-		this.setDoubleBuffered(true);
 		this.addMouseListener(this);
 		this.addMouseMotionListener(this);
 		this.addMouseWheelListener(this);
 		this.addKeyListener(this);	
+		this.setIgnoreRepaint(true);
+		
 	}
 	
-	@Override
-	protected void paintComponent(Graphics g) {
-		requestFocus(true);
-		Graphics2D g2d = (Graphics2D) g;
-		Renderer2D.setRenderHint(g2d);
-		RenderCommand.setGraphics(g2d);
-		layerStack = Application.Get().getLayerStack();
-		
-		for(Layer layer : layerStack.Get()) {
-			layer.onRender();
+	
+	public void paintComponent() {
+		//requestFocus(true);
+		BufferStrategy bufferStrategy = this.getBufferStrategy();
+		if(bufferStrategy == null) return;
+		Graphics2D g2d = null;
+		try {
+			g2d = (Graphics2D) bufferStrategy.getDrawGraphics();
+			Renderer2D.setRenderHint(g2d);
+			RenderCommand.setGraphics(g2d);
+			layerStack = Application.Get().getLayerStack();
+			
+			for(Layer layer : layerStack.Get()) {
+				layer.onRender();
+			}
+			
+		} finally {
+			g2d.dispose();
+			bufferStrategy.show();
 		}
-		super.paintComponent(g2d);
+		
 	}
 
 	@Override

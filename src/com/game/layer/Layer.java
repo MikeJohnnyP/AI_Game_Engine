@@ -26,7 +26,7 @@ public abstract class Layer {
 	public abstract void onDettach();
 	
 	public abstract void onUpdate();
-	public abstract void onRender(Graphics g);
+	public abstract void onRender();
 	
 	protected boolean onKeyPressedEvent(KeyPressedEvent e) {return false;}
 	protected boolean onKeyReleasedEvent(KeyReleasedEvent e) {return false;}

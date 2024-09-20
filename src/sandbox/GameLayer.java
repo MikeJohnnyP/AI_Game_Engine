@@ -1,14 +1,20 @@
 package sandbox;
 
-import java.awt.Graphics;
+
+import java.awt.Color;
+import java.awt.event.KeyEvent;
+import java.awt.geom.Rectangle2D;
 
 import com.game.engine.controller.Application;
 import com.game.event.KeyPressedEvent;
 import com.game.event.MousePressedEvent;
+import com.game.input.Keyboard;
 import com.game.layer.Layer;
 import com.game.logger.EngineLogger;
+import com.game.renderer.RenderCommand;
 
 public class GameLayer extends Layer {
+	private Rectangle2D rect = new Rectangle2D.Double(50, 50, 200, 200);
 
 	protected GameLayer(String name, Layer.LayerType type) {
 		super(name, type);
@@ -30,13 +36,17 @@ public class GameLayer extends Layer {
 
 	@Override
 	public void onUpdate() {
-		System.out.println("Game layer update");
-		
+		if(Keyboard.isKeyPressed(KeyEvent.VK_W)) rect.setFrame(rect.getX(), rect.getY() - 1, rect.getWidth(), rect.getHeight());
+		if(Keyboard.isKeyPressed(KeyEvent.VK_S)) rect.setFrame(rect.getX(), rect.getY() + 1, rect.getWidth(), rect.getHeight());
+		if(Keyboard.isKeyPressed(KeyEvent.VK_A)) rect.setFrame(rect.getX() - 1, rect.getY(), rect.getWidth(), rect.getHeight());
+		if(Keyboard.isKeyPressed(KeyEvent.VK_D)) rect.setFrame(rect.getX() + 1, rect.getY(), rect.getWidth(), rect.getHeight());
 	}
 
 	@Override
-	public void onRender(Graphics g) {
-		// TODO Auto-generated method stub
+	public void onRender() {
+		RenderCommand.clearScreen(Color.black);
+		RenderCommand.setColor(Color.green);
+		RenderCommand.drawShape(rect);
 		
 	}
 	

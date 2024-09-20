@@ -1,11 +1,15 @@
 package com.game.engine.controller;
 
+import java.awt.AWTException;
+import java.awt.BufferCapabilities;
+import java.awt.ImageCapabilities;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 
 import com.game.engine.model.Window;
 import com.game.engine.model.WindowSpec;
 import com.game.engine.view.AView;
+import com.game.engine.view.MyCanvas;
 import com.game.engine.view.ViewComponent;
 import com.game.event.EventDispatcher;
 import com.game.event.KeyPressedEvent;
@@ -24,6 +28,7 @@ public class Application {
 	private Window window;
 	private WindowSpec spec;
 	private AView view;
+	private MyCanvas canvas;
 	private EventDispatcher eventDispatcher;
 	private LayerStack layerStack;
 	
@@ -55,13 +60,27 @@ public class Application {
 		layerStack = new LayerStack();
 		window = new Window(spec);
 		view = new ViewComponent();
+		canvas = new MyCanvas(spec);
 		if(!window.init()) {
 			EngineLogger.Get().severe("Failed to init window");
 			return false;
 		} else
 			EngineLogger.Get().info("Init Window Sucess");
-		window.setComponent(view);
-			
+		//window.setComponent(view);
+		
+		 window.setCanvas(canvas);
+		BufferCapabilities bufferCapabilities = new BufferCapabilities(
+                new ImageCapabilities(true), 
+                new ImageCapabilities(true), 
+                BufferCapabilities.FlipContents.UNDEFINED 
+        );
+
+        try {
+            canvas.createBufferStrategy(2, bufferCapabilities);
+        } catch (AWTException e) {
+            System.err.println("Page flipping not support.");
+            canvas.createBufferStrategy(2);
+        }
 		EngineLogger.Get().info("Init Application Sucess");
 		
 		eventDispatcher.addEventListener(MouseMovedEvent.class, this::mouseMoved);
@@ -103,9 +122,16 @@ public class Application {
 		return window;
 	}
 	
+	public LayerStack getLayerStack() {
+		return layerStack;
+	}
+	
 	public void run() {
 		while(isWindowClose && true) {
-			view.repaint();
+			for(Layer layer : layerStack.Get()) {
+				layer.onUpdate();;
+			}
+			canvas.paintComponent();
 		}
 	}
 	

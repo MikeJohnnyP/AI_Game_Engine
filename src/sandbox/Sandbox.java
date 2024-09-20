@@ -18,7 +18,7 @@ public class Sandbox extends Application {
 //		popLayer(gameLayer);
 //		popLayer(gameLayer);
 		
-		uiLayer.onAttach();
+		uiLayer.onAttach(); 
 		gameLayer.onAttach();
 		
 	}
