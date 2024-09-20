@@ -31,6 +31,8 @@ public class Window {
 	}
 	
 	public boolean init() {
+		System.setProperty("sun.java2d.opengl", "True");
+		System.setProperty("sun.java2d.trace", "log");
 		frame = new JFrame();
 		Dimension dimension = new Dimension(windowData.width, windowData.height);
 		frame.setMinimumSize(dimension);

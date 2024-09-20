@@ -57,8 +57,16 @@ public class MyCanvas extends Canvas implements MouseListener, KeyListener, Mous
 		//requestFocus(true);
 		BufferStrategy bufferStrategy = this.getBufferStrategy();
 		if(bufferStrategy == null) return;
+		
 		Graphics2D g2d = null;
 		try {
+			
+//	        if (bufferStrategy.getCapabilities().isPageFlipping()) {
+//	            System.out.println("Page Flipping is being used.");
+//	        } else {
+//	            System.out.println("Page Flipping is not supported; using blitting.");
+//	        }
+			
 			g2d = (Graphics2D) bufferStrategy.getDrawGraphics();
 			Renderer2D.setRenderHint(g2d);
 			RenderCommand.setGraphics(g2d);
