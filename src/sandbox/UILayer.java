@@ -32,12 +32,12 @@ public class UILayer extends Layer {
 	}
 
 	@Override
-	public void onUpdate(float deltaTime) {
+	public void onUpdate(TimeSteps ts) {
 	}
 
 	@Override
 	public void onRender() {
-		RenderCommand.fillRect(0,0, 150, 150);
+		//RenderCommand.fillRect(0,0, 150, 150);
 		
 	}
 	

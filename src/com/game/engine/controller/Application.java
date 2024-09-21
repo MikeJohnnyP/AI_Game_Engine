@@ -24,6 +24,7 @@ import com.game.input.Mouse;
 import com.game.layer.Layer;
 import com.game.layer.LayerStack;
 import com.game.logger.EngineLogger;
+import com.game.renderer.RenderCommand;
 import com.game.time.TimeSteps;
 
 public class Application {
@@ -94,6 +95,7 @@ public class Application {
 		eventDispatcher.addEventListener(MousePressedEvent.class, this::mousePressed);
 		eventDispatcher.addEventListener(MouseReleasedEvent.class, this::mouseReleased);
 		ts = new TimeSteps(0.f, 1.f);
+		RenderCommand.setGraphicsConfiguration(canvas.getGraphicsConfiguration());
 		frameData = new PerFrameData();
 		
 		return true;
@@ -137,33 +139,51 @@ public class Application {
 	
 	public void run() {
 		clientInit();
-		final float MAX_DELTA_TIME = 0.05f;
-		final double minDeltaTime = 1_000_000_000.0 / spec.getMaxFPS();
+		//final float MAX_DELTA_TIME = 0.05f;
+		final double FIXED_TIME_STEP = 1.0 / spec.getMaxFPS();
+		double accumulator = 0.0;
 		long lastFrameTime = System.nanoTime();
 		
 		while(isWindowClose && true) {
-			while (System.nanoTime() - lastFrameTime < minDeltaTime);
+			//RenderCommand.setGraphicsConfiguration(canvas.getGraphicsConfiguration());
+			//while (System.nanoTime() - lastFrameTime < FIXED_TIME_STEP);
 			long currentFrameTime = System.nanoTime();
 			
-			ts.setDeltaTime((currentFrameTime - lastFrameTime)/1_000_000_000.0); 
-			//System.out.println(ts);
+			double elapsedTime = (currentFrameTime - lastFrameTime)/1_000_000_000.0;
+			ts.setDeltaTime(elapsedTime); 
+			
+			accumulator += elapsedTime;
 			
 			lastFrameTime = currentFrameTime;
 			
-			while (ts.getDeltaTime() > MAX_DELTA_TIME) {
-				frameData.IsCatchUpPhase = true;
-
-				for (Layer layer : layerStack.Get()) {
-					layer.onUpdate(MAX_DELTA_TIME);
-				}
-				ts.setDeltaTime(ts.getDeltaTime() - MAX_DELTA_TIME);
-			}
-			frameData.IsCatchUpPhase = false;
+//			while (ts.getDeltaTime() > MAX_DELTA_TIME) {
+//				frameData.IsCatchUpPhase = true;
+//
+//				for (Layer layer : layerStack.Get()) {
+//					layer.onUpdate(MAX_DELTA_TIME);
+//				}
+//				ts.setDeltaTime(ts.getDeltaTime() - MAX_DELTA_TIME);
+//				System.out.println("CatchUp Fps" + ts);
+//				RenderCommand.setTimeSteps(MAX_DELTA_TIME);
+//				canvas.onRender();
+//				
+//			}
+//			frameData.IsCatchUpPhase = false;
 			
-			for(Layer layer : layerStack.Get()) {
-				layer.onUpdate(ts.getTimeSpeed());
+			if(accumulator >= 3) {
+				accumulator = FIXED_TIME_STEP;
+			}
+			
+			while(accumulator >= FIXED_TIME_STEP) {
+				for(Layer layer : layerStack.Get()) {
+					ts.setDeltaTime(FIXED_TIME_STEP);
+					layer.onUpdate(ts);
+				}
+				accumulator -= FIXED_TIME_STEP;
 			}
 			frameData.FrameIndex++;
+			RenderCommand.setTimeSteps(ts);
+			RenderCommand.setTimeSteps(FIXED_TIME_STEP);
 			canvas.onRender();
 		}
 		clientShutdown();

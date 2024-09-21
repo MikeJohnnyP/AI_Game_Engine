@@ -1,7 +1,7 @@
 package com.game.time;
 
 public class TimeSteps {
-	private float deltaTime;
+	private double deltaTime;
 	private float timeScale;
 	
 	public TimeSteps(float deltaTime, float timeScale) {
@@ -14,7 +14,7 @@ public class TimeSteps {
 		this.timeScale = 0.f;
 	}
 
-	public float getDeltaTime() {
+	public double getDeltaTime() {
 		return deltaTime;
 	}
 
@@ -23,7 +23,7 @@ public class TimeSteps {
 	}
 	
 	public void setDeltaTime(double deltaTime) {
-		this.deltaTime = (float) deltaTime;
+		this.deltaTime = deltaTime;
 	}
 
 	public float getTimeScale() {
@@ -34,7 +34,7 @@ public class TimeSteps {
 		this.timeScale = timeScale;
 	}
 	
-	public float getTimeSpeed() {
+	public double getTimeSpeed() {
 		return timeScale * deltaTime;
 	}
 	

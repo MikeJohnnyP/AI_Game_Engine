@@ -5,15 +5,30 @@ import java.awt.Graphics2D;
 
 import com.game.engine.controller.Application;
 import com.game.engine.model.Window.WindowData;
+import com.game.time.TimeSteps;
 
 public class RenderCommand {
 	
 	private static Graphics2D g2d;
+	private static GraphicsConfiguration gc;
+	private static TimeSteps ts;
 	
 	private RenderCommand() {}
 
 	public static void setGraphics(Graphics2D currentG2d) {
 		g2d = currentG2d;
+	}
+	
+	public static void setGraphicsConfiguration(GraphicsConfiguration currentGc) {
+		gc = currentGc;
+	}
+	
+	public static void setTimeSteps(TimeSteps currentTs) {
+		ts = currentTs;
+	}
+	
+	public static void setTimeSteps(double deltaTime) {
+		ts.setDeltaTime(deltaTime);
 	}
 	
 	public static void setColor(Color color) {
@@ -60,5 +75,24 @@ public class RenderCommand {
 		g2d.fill(shape);
 	}
 	
+	public static void drawImg(Image img, int w, int h) {
+		g2d.drawImage(img, 0, 0, null);
+	}
+	
+	public static void drawImg(Image img, int x, int y, int w, int h) {
+		Graphics2D draw2D = (Graphics2D) g2d.create();
+		
+	    double translateX = x * ts.getTimeSpeed();
+	    double translateY = y * ts.getTimeSpeed();
+
+	    draw2D.translate(translateX, translateY);
+			
+		draw2D.drawImage(img, 0, 0, w, h, null);
+		draw2D.dispose();
+	}
+	
+	public static GraphicsConfiguration getGraphicsConfiguration() {
+		return gc;
+	}
 	
 }

@@ -46,6 +46,7 @@ public class ViewComponent extends AView implements MouseListener, KeyListener, 
 		this.addMouseMotionListener(this);
 		this.addMouseWheelListener(this);
 		this.addKeyListener(this);	
+		RenderCommand.setGraphicsConfiguration(getGraphicsConfiguration());
 	}
 	
 	@Override
@@ -54,6 +55,7 @@ public class ViewComponent extends AView implements MouseListener, KeyListener, 
 		Graphics2D g2d = (Graphics2D) g;
 		Renderer2D.setRenderHint(g2d);
 		RenderCommand.setGraphics(g2d);
+		RenderCommand.setGraphicsConfiguration(getGraphicsConfiguration());
 		layerStack = Application.Get().getLayerStack();
 		
 		for(Layer layer : layerStack.Get()) {

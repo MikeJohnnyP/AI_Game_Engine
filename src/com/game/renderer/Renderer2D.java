@@ -3,6 +3,8 @@ package com.game.renderer;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 
+import com.game.graphics.Sprite;
+
 public class Renderer2D{
 
 	public static void setRenderHint(Graphics2D g2d) {
@@ -22,6 +24,9 @@ public class Renderer2D{
 		
 	}
 
+	public static void draw(Sprite sprite) {
+		RenderCommand.drawImg(sprite.getImg(), sprite.getXpos(), sprite.getYpos(), sprite.getWidth(), sprite.getHeight());
+	}
 	
 	public static void endScenne() {
 		// TODO Auto-generated method stub

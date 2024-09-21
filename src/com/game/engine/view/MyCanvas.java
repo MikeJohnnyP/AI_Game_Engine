@@ -49,7 +49,6 @@ public class MyCanvas extends Canvas implements MouseListener, KeyListener, Mous
 		this.addMouseWheelListener(this);
 		this.addKeyListener(this);	
 		this.setIgnoreRepaint(true);
-		
 	}
 	
 	
@@ -70,11 +69,13 @@ public class MyCanvas extends Canvas implements MouseListener, KeyListener, Mous
 			g2d = (Graphics2D) bufferStrategy.getDrawGraphics();
 			Renderer2D.setRenderHint(g2d);
 			RenderCommand.setGraphics(g2d);
+			RenderCommand.setGraphicsConfiguration(getGraphicsConfiguration());
 			layerStack = Application.Get().getLayerStack();
 			
 			for(Layer layer : layerStack.Get()) {
 				layer.onRender();
 			}
+			
 			
 		} finally {
 			g2d.dispose();
