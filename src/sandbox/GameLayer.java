@@ -8,6 +8,7 @@ import java.awt.geom.Rectangle2D;
 import com.game.engine.controller.Application;
 import com.game.event.KeyPressedEvent;
 import com.game.event.MousePressedEvent;
+import com.game.graphics.AnimatedSprite;
 import com.game.graphics.Sprite;
 import com.game.graphics.Texture;
 import com.game.input.Keyboard;
@@ -19,9 +20,10 @@ import com.game.time.TimeSteps;
 
 public class GameLayer extends Layer {
 	private Rectangle2D rect = new Rectangle2D.Double(50.67, 50.75, 200.65, 200.54);
-	Texture tex;
-	Sprite player;
-	
+	Texture tex2;
+	Texture tex3;
+	Sprite attack;
+	Sprite background;
 
 	protected GameLayer(String name, Layer.LayerType type) {
 		super(name, type);
@@ -29,8 +31,10 @@ public class GameLayer extends Layer {
 
 	@Override
 	public void onAttach() {
-		tex = new Texture("Exit.png", "player");
-		player = new Sprite(tex);
+		tex3 = new Texture("Blue_witch/B_witch_idle.png", "Player");
+		attack = new AnimatedSprite(tex3, 5, 0, 32, 48, 2);
+		tex2 = new Texture("Background/Background.png", "background");
+		background = new Sprite(tex2, 0, 0, 1280, 720);
 		Application.Get().getDispatcher().addEventListener(MousePressedEvent.class, this::onMousePressedEvent);
 		Application.Get().getDispatcher().addEventListener(KeyPressedEvent.class, this::onKeyPressedEvent);
 		System.out.println("Game Layer attach");
@@ -44,25 +48,21 @@ public class GameLayer extends Layer {
 	}
 
 	@Override
-	public void onUpdate(TimeSteps ts) {
-//		if(Keyboard.isKeyPressed(KeyEvent.VK_W)) rect.setFrame(rect.getX(), (rect.getY() - speed), rect.getWidth(), rect.getHeight());
-//		if(Keyboard.isKeyPressed(KeyEvent.VK_S)) rect.setFrame(rect.getX(), (rect.getY() + speed), rect.getWidth(), rect.getHeight());
-//		if(Keyboard.isKeyPressed(KeyEvent.VK_A)) rect.setFrame((rect.getX() - speed), rect.getY() , rect.getWidth(), rect.getHeight());
-//		if(Keyboard.isKeyPressed(KeyEvent.VK_D)) rect.setFrame((rect.getX() + speed), rect.getY(), rect.getWidth(), rect.getHeight());
+	public void onUpdate(TimeSteps ts) {		
+		if(Keyboard.isKeyPressed(KeyEvent.VK_W)) attack.setYPos(attack.getYpos() - 500);
+		if(Keyboard.isKeyPressed(KeyEvent.VK_S)) attack.setYPos(attack.getYpos() + 500);
+		if(Keyboard.isKeyPressed(KeyEvent.VK_A)) attack.setXPos(attack.getXpos() - 500);
+		if(Keyboard.isKeyPressed(KeyEvent.VK_D)) attack.setXPos(attack.getXpos() + 500);
 		
-		if(Keyboard.isKeyPressed(KeyEvent.VK_W)) player.setYPos(player.getYpos() - 1000);
-		if(Keyboard.isKeyPressed(KeyEvent.VK_S)) player.setYPos(player.getYpos() + 1000);
-		if(Keyboard.isKeyPressed(KeyEvent.VK_A)) player.setXPos(player.getXpos() - 1000);
-		if(Keyboard.isKeyPressed(KeyEvent.VK_D)) player.setXPos(player.getXpos() + 1000);
+		System.out.println(attack.getXpos());
+		System.out.println(attack.getYpos());
 	}
 
 	@Override
 	public void onRender() {
 		RenderCommand.clearScreen(Color.black);
-		//RenderCommand.setColor(Color.green);
-		//RenderCommand.drawShape(rect);
-		//RenderCommand.drawImg(player.getImg(), player.getXpos(), player.getYpos(), player.getWidth(), player.getHeight());
-		Renderer2D.draw(player);
+		Renderer2D.draw(background);
+		Renderer2D.draw(attack);
 		
 	}
 	

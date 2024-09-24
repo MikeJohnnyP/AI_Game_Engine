@@ -1,38 +1,85 @@
 package com.game.graphics;
 
-import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.Transparency;
-import java.awt.geom.AffineTransform;
-import java.awt.image.AffineTransformOp;
-import java.awt.image.BufferedImage;
-import java.awt.image.VolatileImage;
 
-import com.game.renderer.RenderCommand;
+import java.awt.image.BufferedImage;
+
+import com.game.scale.Scalr;
+import com.game.scale.Scalr.Method;
+import com.game.scale.Scalr.Mode;
 
 public class Sprite {
-	private int xPos = 0;
-	private int yPos = 0;
-	private int w;
-	private int h;
-	private String texName;
-	private BufferedImage img;
+	protected int xPos = 0;
+	protected int yPos = 0;
+	protected int w;
+	protected int h;
+	protected String texName;
+	protected BufferedImage masterImg;
+	protected BufferedImage scaledImg;
 
     public Sprite(Texture texture) {
 		this.w = texture.getTextureWidth();
 		this.h = texture.getTextureHeight();
 		this.texName = texture.getName();
-		this.img = texture.getImg();
+		this.masterImg = texture.getImg();
+		this.scaledImg = this.masterImg;
+	}
+    
+    public Sprite(Texture texture, int xPos, int yPos) {
+    	this.xPos = xPos;
+    	this.yPos = yPos;
+		this.w = texture.getTextureWidth();
+		this.h = texture.getTextureHeight();
+		this.texName = texture.getName();
+		this.masterImg = texture.getImg();
+		this.scaledImg = this.masterImg;
+	}
+    
+    public Sprite(Texture texture, int xPos, int yPos, int scale) {
+    	this.xPos = xPos;
+    	this.yPos = yPos;
+		this.w = texture.getTextureWidth();
+		this.h = texture.getTextureHeight();
+		this.texName = texture.getName();
+		this.masterImg = texture.getImg();
+		this.scaledImg = scaleImg(this.masterImg, scale);
+	}
+    
+    public Sprite(Texture texture, int xPos, int yPos, int scaleX, int scaleY) {
+    	this.xPos = xPos;
+    	this.yPos = yPos;
+		this.w = texture.getTextureWidth();
+		this.h = texture.getTextureHeight();
+		this.texName = texture.getName();
+		this.masterImg = texture.getImg();
+		this.scaledImg = scaleImg(this.masterImg, scaleX, scaleY);
 	}
 	
 	public int getWidth() { return w; }
 	public int getHeight() { return h; }
 	public String getName() { return texName; }
-	public BufferedImage getImg() { return img; }
+	public BufferedImage getImg() { return scaledImg; }
 	public int getXpos() { return xPos; }
 	public int getYpos() { return yPos; }
 	public void setXPos(int xPos) { this.xPos = xPos; } 
 	public void setYPos(int yPos) { this.yPos = yPos; } 
+	
+	protected BufferedImage scaleImg(BufferedImage masterImg, int value) {
+		BufferedImage result = Scalr.resize(masterImg, Method.ULTRA_QUALITY, masterImg.getWidth() * value, masterImg.getHeight() * value);
+		if (result != null) {
+			this.w = result.getWidth();
+			this.h = result.getHeight();
+		}
+		return result;
+	}
+	
+	public BufferedImage scaleImg(BufferedImage masterImg, int targetWidth, int targetHeight) {
+		BufferedImage result = Scalr.resize(masterImg, Method.ULTRA_QUALITY, targetWidth, targetHeight);
+		if (result != null) {
+			this.w = targetWidth;
+			this.h = targetHeight;
+		}
+		return result;
+	}
 
 //    public Sprite getSubimage(int x, int y, int w, int h) {
 //        return new Sprite(image.getSubimage(x, y, w, h));
