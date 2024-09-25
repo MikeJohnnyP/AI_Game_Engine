@@ -1,5 +1,6 @@
 package sandbox;
 
+import com.game.AssetPool;
 import com.game.engine.controller.Application;
 import com.game.engine.model.WindowSpec;
 import com.game.layer.Layer;
@@ -10,6 +11,14 @@ public class Sandbox extends Application {
 
 	@Override
 	public void clientInit() {
+		
+		AssetPool.Get().loadAsset("WitchIdle", "Blue_witch/B_witch_idle.png");
+		AssetPool.Get().loadAsset("WitchRun", "Blue_witch/B_witch_run.png");
+		AssetPool.Get().loadAsset("WitchAttack", "Blue_witch/B_witch_attack.png");
+		AssetPool.Get().loadAsset("BlueBackground", "Background/Background.png");
+		
+		
+		
 		uiLayer = new UILayer("Ui Layer", Layer.LayerType.Overlay);
 		gameLayer = new GameLayer("Game layer", Layer.LayerType.Standard);
 		pushLayer(gameLayer);

@@ -1,9 +1,9 @@
 package sandbox;
 
-
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 
+import com.game.AssetPool;
 import com.game.animation.AnimationState;
 import com.game.animation.State;
 import com.game.animation.StateMachine;
@@ -22,13 +22,9 @@ import com.game.time.TimeSteps;
 import sandbox.entity.Player;
 
 public class GameLayer extends Layer {
-	Texture runTexture;
-	Texture idleTexture;
-	Texture attackTexture;
 	AnimatedSprite run;
 	AnimatedSprite idle;
 	AnimatedSprite attack;
-	Texture backgroundTexture;
 	Sprite background;
 	Player player;
 	AnimationState arcRun = new AnimationState();
@@ -41,13 +37,9 @@ public class GameLayer extends Layer {
 
 	@Override
 	public void onAttach() {
-		idleTexture = new Texture("Blue_witch/B_witch_idle.png", "PlayerIdle");
-		runTexture = new Texture("Blue_witch/B_witch_run.png", "PlayerRun");
-		attackTexture = new Texture("Blue_witch/B_witch_attack.png", "PlayerAttack");
-		run = new AnimatedSprite(runTexture, 7, 0, 32, 48, 2);
-		idle = new AnimatedSprite(idleTexture, 5, 0, 32, 48, 2);
-		attack = new AnimatedSprite(attackTexture, 8, 0, 104, 46);
-		backgroundTexture = new Texture("Background/Background.png", "Background");
+		run = new AnimatedSprite(AssetPool.Get().getAsset("WitchRun"), 7, 0, 32, 48, 2);
+		idle = new AnimatedSprite(AssetPool.Get().getAsset("WitchIdle"), 5, 0, 32, 48, 2);
+		attack = new AnimatedSprite(AssetPool.Get().getAsset("WitchAttack"), 8, 0, 104, 46);
 		
 		arcRun.title = "run";
 		float deltaTime = 0.1f;
@@ -77,7 +69,7 @@ public class GameLayer extends Layer {
 		player = new Player(stateMachine);
 		
 		
-		background = new Sprite(backgroundTexture, 0, 0, 1280, 720);
+		background = new Sprite(AssetPool.Get().getAsset("BlueBackground"), 0, 0, 1280, 720);
 		Application.Get().getDispatcher().addEventListener(MousePressedEvent.class, this::onMousePressedEvent);
 		Application.Get().getDispatcher().addEventListener(KeyPressedEvent.class, this::onKeyPressedEvent);
 		System.out.println("Game Layer attach");
@@ -116,7 +108,7 @@ public class GameLayer extends Layer {
 	@Override
 	public void onRender() {
 		RenderCommand.clearScreen(Color.black);
-		//Renderer2D.draw(background);
+		Renderer2D.draw(background);
 		Renderer2D.draw(player);
 		
 	}
