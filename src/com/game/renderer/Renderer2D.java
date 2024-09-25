@@ -5,6 +5,8 @@ import java.awt.RenderingHints;
 
 import com.game.graphics.Sprite;
 
+import sandbox.entity.Entity;
+
 public class Renderer2D{
 
 	public static void setRenderHint(Graphics2D g2d) {
@@ -26,6 +28,10 @@ public class Renderer2D{
 
 	public static void draw(Sprite sprite) {
 		RenderCommand.drawImg(sprite.getImg(), sprite.getXpos(), sprite.getYpos(), sprite.getWidth(), sprite.getHeight());
+	}
+	
+	public static void draw(Entity entity) {
+		RenderCommand.drawImg(entity.getSprite().getImg(), entity.getxPos(), entity.getyPos(), entity.getSprite().getWidth(), entity.getSprite().getHeight());
 	}
 	
 	public static void endScenne() {

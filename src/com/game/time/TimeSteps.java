@@ -11,7 +11,7 @@ public class TimeSteps {
 	
 	public TimeSteps() {
 		this.deltaTime = 0.f;
-		this.timeScale = 0.f;
+		this.timeScale = 1.0f;
 	}
 
 	public double getDeltaTime() {

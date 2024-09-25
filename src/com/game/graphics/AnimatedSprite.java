@@ -44,7 +44,7 @@ public class AnimatedSprite extends Sprite {
 		ArrayList<BufferedImage> result = new ArrayList<BufferedImage>();
 		for(int x = 0; x <= numOfCol; x++) {
 			for(int y = 0; y <= numOfRow; y++) {
-				result.add(scaledImg.getSubimage(x, y, spritePerWidth, spritePerHeight));
+				result.add(scaledImg.getSubimage(x * spritePerWidth, y * spritePerHeight, spritePerWidth, spritePerHeight));
 				quantitySprite++;
 			}
 		}
@@ -58,7 +58,7 @@ public class AnimatedSprite extends Sprite {
 				BufferedImage temp = scaleImg(masterImg, value);
 				System.out.println(masterImg.getWidth() + " " + masterImg.getHeight());
 				System.out.println(temp.getWidth() + " " + temp.getHeight());
-				result.add(temp.getSubimage(y, x, spritePerWidth, spritePerHeight));
+				result.add(temp.getSubimage(x * spritePerWidth, y * spritePerHeight, spritePerWidth, spritePerHeight));
 				quantitySprite++;
 			}
 		}
@@ -84,6 +84,19 @@ public class AnimatedSprite extends Sprite {
 		if(index >= 0 && index < quantitySprite) return imgArray.get(index);
 		
 		return null;
+	}
+	
+	public Sprite getSpriteIndex(int index) {
+		return new Sprite(getImg(index));
+	}
+	
+	public void nextFrame() {
+		if(currentFrame == imgArray.size() - 1) {
+			lastFrame = currentFrame;
+			currentFrame = 0;
+			return;
+		}
+		lastFrame = currentFrame++;
 	}
 	
 	public void setCurrentFrame(int frame) {

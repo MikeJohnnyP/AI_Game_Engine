@@ -1,4 +1,4 @@
-package sandbox.entity;
+package com.game.animation;
 
 public class State {
 	public static final int IDLE = 1 << 0;

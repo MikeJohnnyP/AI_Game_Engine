@@ -53,6 +53,16 @@ public class Sprite {
 		this.masterImg = texture.getImg();
 		this.scaledImg = scaleImg(this.masterImg, scaleX, scaleY);
 	}
+    
+    public Sprite(BufferedImage img) {
+    	this.xPos = 0;
+    	this.yPos = 0;
+    	this.w = img.getWidth();
+    	this.h = img.getHeight();
+    	this.texName = null;
+    	this.masterImg = img;
+    	this.scaledImg = img;
+    }
 	
 	public int getWidth() { return w; }
 	public int getHeight() { return h; }
