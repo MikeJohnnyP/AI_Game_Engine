@@ -3,9 +3,8 @@ package com.game.renderer;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 
+import com.game.Entity;
 import com.game.graphics.Sprite;
-
-import sandbox.entity.Entity;
 
 public class Renderer2D{
 
@@ -31,7 +30,7 @@ public class Renderer2D{
 	}
 	
 	public static void draw(Entity entity) {
-		RenderCommand.drawImg(entity.getSprite().getImg(), entity.getxPos(), entity.getyPos(), entity.getSprite().getWidth(), entity.getSprite().getHeight());
+		RenderCommand.drawImg(entity);
 	}
 	
 	public static void endScenne() {

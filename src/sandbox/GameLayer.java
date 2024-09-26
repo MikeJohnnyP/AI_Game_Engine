@@ -9,12 +9,15 @@ import com.game.animation.State;
 import com.game.animation.StateMachine;
 import com.game.engine.controller.Application;
 import com.game.event.KeyPressedEvent;
+import com.game.event.MouseMovedEvent;
 import com.game.event.MousePressedEvent;
 import com.game.graphics.AnimatedSprite;
 import com.game.graphics.Sprite;
 import com.game.graphics.Texture;
 import com.game.input.Keyboard;
+import com.game.input.Mouse;
 import com.game.layer.Layer;
+import com.game.logger.EngineLogger;
 import com.game.renderer.RenderCommand;
 import com.game.renderer.Renderer2D;
 import com.game.time.TimeSteps;
@@ -66,12 +69,12 @@ public class GameLayer extends Layer {
 		stateMachine.addState(State.RUN, arcRun);
 		stateMachine.setDefaultState(State.IDLE);
 		
-		player = new Player(stateMachine);
-		
+		player = new Player(stateMachine, 640, 350);
 		
 		background = new Sprite(AssetPool.Get().getAsset("BlueBackground"), 0, 0, 1280, 720);
 		Application.Get().getDispatcher().addEventListener(MousePressedEvent.class, this::onMousePressedEvent);
 		Application.Get().getDispatcher().addEventListener(KeyPressedEvent.class, this::onKeyPressedEvent);
+		Application.Get().getDispatcher().addEventListener(MouseMovedEvent.class, this::onMouseMovedEvent);
 		System.out.println("Game Layer attach");
 		
 	}
@@ -102,7 +105,11 @@ public class GameLayer extends Layer {
 		if(Keyboard.isKeyPressed(KeyEvent.VK_D)) {
 			player.setxPos(player.getxPos() + 500);
 			player.setState(State.RUN);
-		}		
+		}	
+		
+		System.out.println(player.getRelativeXPos());
+		System.out.println(player.getRelativeYPos());
+		
 	}
 
 	@Override
@@ -120,6 +127,12 @@ public class GameLayer extends Layer {
 	
 	@Override
 	protected boolean onMousePressedEvent(MousePressedEvent e) {
+		EngineLogger.Get().info("MouseX: " + Mouse.getPosX() + " MouseY: " + Mouse.getPosY());
+		return false;
+	}
+	
+	@Override
+	protected boolean onMouseMovedEvent(MouseMovedEvent e) {
 		return false;
 	}
 

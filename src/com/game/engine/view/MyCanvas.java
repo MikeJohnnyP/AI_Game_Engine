@@ -76,7 +76,6 @@ public class MyCanvas extends Canvas implements MouseListener, KeyListener, Mous
 				layer.onRender();
 			}
 			
-			
 		} finally {
 			g2d.dispose();
 			bufferStrategy.show();

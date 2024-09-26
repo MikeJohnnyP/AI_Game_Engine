@@ -1,5 +1,8 @@
 package sandbox.entity;
 
+import java.awt.geom.Rectangle2D;
+
+import com.game.Entity;
 import com.game.animation.StateMachine;
 import com.game.graphics.Sprite;
 import com.game.time.TimeSteps;
@@ -13,11 +16,19 @@ public class Player implements Entity {
 	
 	private int xPos;
 	private int yPos;
+	
+	private int relativePosX;
+	private int relativePosY;
+	
+	
+	public Rectangle2D rectCollide = new Rectangle2D.Double();
 
-	public Player(StateMachine stateMachine) {
+	public Player(StateMachine stateMachine, int posX, int posY) {
 		this.stateMachine = stateMachine;
-		this.xPos = 0;
-		this.yPos = 0;
+		this.xPos = posX;
+		this.yPos = posY;
+		this.relativePosX = posX;
+		this.relativePosY = posY;
 	}
 
 	@Override
@@ -57,6 +68,44 @@ public class Player implements Entity {
 	public void update(TimeSteps ts) {
 		stateMachine.update((float) ts.getTimeSpeed());
 		
+	}
+
+	@Override
+	public int getRelativeXPos() {
+		return relativePosX;
+	}
+
+	@Override
+	public int getRelativeYPos() {
+		return relativePosY;
+	}
+
+	@Override
+	public boolean isCollide(Rectangle2D rect) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void setRelativePosX(int relativePosX) {
+		this.relativePosX = relativePosX;
+		
+	}
+
+	@Override
+	public void setRelativePosY(int relativePosY) {
+		this.relativePosY = relativePosY;
+	}
+
+	@Override
+	public void setRect(double x, double y, double w, double h) {
+		this.rectCollide.setFrame(x, y, w, h);
+		
+	}
+
+	@Override
+	public Rectangle2D getRect() {
+		return rectCollide;
 	}
 	
 	

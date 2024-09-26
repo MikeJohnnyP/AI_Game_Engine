@@ -11,13 +11,10 @@ public class Sandbox extends Application {
 
 	@Override
 	public void clientInit() {
-		
 		AssetPool.Get().loadAsset("WitchIdle", "Blue_witch/B_witch_idle.png");
 		AssetPool.Get().loadAsset("WitchRun", "Blue_witch/B_witch_run.png");
 		AssetPool.Get().loadAsset("WitchAttack", "Blue_witch/B_witch_attack.png");
 		AssetPool.Get().loadAsset("BlueBackground", "Background/Background.png");
-		
-		
 		
 		uiLayer = new UILayer("Ui Layer", Layer.LayerType.Overlay);
 		gameLayer = new GameLayer("Game layer", Layer.LayerType.Standard);
@@ -37,7 +34,7 @@ public class Sandbox extends Application {
 	
 	public static void main(String[] args) {
 		Application.setInstance(new Sandbox());
-		Application.Get().init(new WindowSpec(1280, 720, "My Game", 1000));
+		Application.Get().init(new WindowSpec(1280, 720, "My Game", 60));
 		Application.Get().run();
 	}
 }

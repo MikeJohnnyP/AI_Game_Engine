@@ -2,10 +2,15 @@ package com.game.renderer;
 
 import java.awt.*;
 import java.awt.Graphics2D;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Point2D;
 
+import com.game.Entity;
 import com.game.engine.controller.Application;
 import com.game.engine.model.Window.WindowData;
 import com.game.time.TimeSteps;
+
+import sandbox.entity.Player;
 
 public class RenderCommand {
 	
@@ -89,6 +94,24 @@ public class RenderCommand {
 			
 		draw2D.drawImage(img, 0, 0, w, h, null);
 		draw2D.dispose();
+	}
+	
+	public static void drawImg(Entity entity) {
+		Graphics2D draw2D = (Graphics2D) g2d.create();
+		
+	    double translateX = entity.getxPos() * ts.getTimeSpeed();
+	    double translateY = entity.getyPos() * ts.getTimeSpeed();
+
+	    draw2D.translate(translateX, translateY);
+			
+		draw2D.drawImage(entity.getSprite().getImg(), 0, 0, entity.getSprite().getWidth(), entity.getSprite().getHeight(), null);
+		draw2D.dispose();
+		
+		entity.setRelativePosX((int) translateX);
+		entity.setRelativePosY((int) translateY);
+		entity.setRect(translateX, translateY, entity.getSprite().getImg().getWidth(), entity.getSprite().getImg().getHeight());
+		g2d.draw(entity.getRect());
+		
 	}
 	
 	public static GraphicsConfiguration getGraphicsConfiguration() {

@@ -150,7 +150,7 @@ public class Application {
 			long currentFrameTime = System.nanoTime();
 			
 			double elapsedTime = (currentFrameTime - lastFrameTime)/1_000_000_000.0;
-			ts.setDeltaTime(elapsedTime); 
+			ts.setDeltaTime(FIXED_TIME_STEP); 
 			
 			accumulator += elapsedTime;
 			
