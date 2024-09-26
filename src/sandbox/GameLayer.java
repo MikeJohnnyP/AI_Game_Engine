@@ -11,7 +11,7 @@ import com.game.engine.controller.Application;
 import com.game.event.KeyPressedEvent;
 import com.game.event.MouseMovedEvent;
 import com.game.event.MousePressedEvent;
-import com.game.graphics.AnimatedSprite;
+import com.game.graphics.SpriteSheet;
 import com.game.graphics.Sprite;
 import com.game.graphics.Texture;
 import com.game.input.Keyboard;
@@ -25,9 +25,9 @@ import com.game.time.TimeSteps;
 import sandbox.entity.Player;
 
 public class GameLayer extends Layer {
-	AnimatedSprite run;
-	AnimatedSprite idle;
-	AnimatedSprite attack;
+	SpriteSheet run;
+	SpriteSheet idle;
+	SpriteSheet attack;
 	Sprite background;
 	Player player;
 	AnimationState arcRun = new AnimationState();
@@ -40,9 +40,9 @@ public class GameLayer extends Layer {
 
 	@Override
 	public void onAttach() {
-		run = new AnimatedSprite(AssetPool.Get().getAsset("WitchRun"), 7, 0, 32, 48, 2);
-		idle = new AnimatedSprite(AssetPool.Get().getAsset("WitchIdle"), 5, 0, 32, 48, 2);
-		attack = new AnimatedSprite(AssetPool.Get().getAsset("WitchAttack"), 8, 0, 104, 46);
+		run = new SpriteSheet(AssetPool.Get().getAsset("WitchRun"), 7, 0, 32, 48, 2);
+		idle = new SpriteSheet(AssetPool.Get().getAsset("WitchIdle"), 5, 0, 32, 48, 2);
+		attack = new SpriteSheet(AssetPool.Get().getAsset("WitchAttack"), 8, 0, 104, 46);
 		
 		arcRun.title = "run";
 		float deltaTime = 0.1f;
@@ -106,9 +106,6 @@ public class GameLayer extends Layer {
 			player.setxPos(player.getxPos() + 500);
 			player.setState(State.RUN);
 		}	
-		
-		System.out.println(player.getRelativeXPos());
-		System.out.println(player.getRelativeYPos());
 		
 	}
 

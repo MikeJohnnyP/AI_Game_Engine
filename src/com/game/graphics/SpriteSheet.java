@@ -3,7 +3,7 @@ package com.game.graphics;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
-public class AnimatedSprite extends Sprite {
+public class SpriteSheet extends Sprite {
 	private ArrayList<BufferedImage> imgArray = new ArrayList<>();
 	private int numOfCol, numOfRow;
 	
@@ -14,7 +14,7 @@ public class AnimatedSprite extends Sprite {
 	
 	private int quantitySprite;
 	
-	public AnimatedSprite(Texture texture, int numOfRow, int numOfCol, int spritePerWidth, int spritePerHeight) {
+	public SpriteSheet(Texture texture, int numOfRow, int numOfCol, int spritePerWidth, int spritePerHeight) {
 		super(texture);
 		this.numOfCol = numOfCol;
 		this.numOfRow = numOfRow;
@@ -26,7 +26,7 @@ public class AnimatedSprite extends Sprite {
 		
 	}
 	
-	public AnimatedSprite(Texture texture, int numOfRow, int numOfCol, int spritePerWidth, int spritePerHeight, int scale) {
+	public SpriteSheet(Texture texture, int numOfRow, int numOfCol, int spritePerWidth, int spritePerHeight, int scale) {
 		super(texture, 0, 0, scale);
 		this.numOfCol = numOfCol;
 		this.numOfRow = numOfRow;
@@ -45,20 +45,6 @@ public class AnimatedSprite extends Sprite {
 		for(int x = 0; x <= numOfCol; x++) {
 			for(int y = 0; y <= numOfRow; y++) {
 				result.add(scaledImg.getSubimage(x * spritePerWidth, y * spritePerHeight, spritePerWidth, spritePerHeight));
-				quantitySprite++;
-			}
-		}
-		return result;
-	}
-	
-	private ArrayList<BufferedImage> getImgScaleArray(int value) {
-		ArrayList<BufferedImage> result = new ArrayList<BufferedImage>();
-		for(int x = 0; x <= numOfCol; x++) {
-			for(int y = 0; y <= numOfRow; y++) {
-				BufferedImage temp = scaleImg(masterImg, value);
-				System.out.println(masterImg.getWidth() + " " + masterImg.getHeight());
-				System.out.println(temp.getWidth() + " " + temp.getHeight());
-				result.add(temp.getSubimage(x * spritePerWidth, y * spritePerHeight, spritePerWidth, spritePerHeight));
 				quantitySprite++;
 			}
 		}
