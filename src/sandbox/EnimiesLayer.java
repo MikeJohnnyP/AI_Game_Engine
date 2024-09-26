@@ -11,9 +11,8 @@ import com.game.engine.controller.Application;
 import com.game.event.KeyPressedEvent;
 import com.game.event.MouseMovedEvent;
 import com.game.event.MousePressedEvent;
-import com.game.graphics.SpriteSheet;
 import com.game.graphics.Sprite;
-import com.game.graphics.Texture;
+import com.game.graphics.SpriteSheet;
 import com.game.input.Keyboard;
 import com.game.input.Mouse;
 import com.game.layer.Layer;
@@ -24,7 +23,7 @@ import com.game.time.TimeSteps;
 
 import sandbox.entity.Player;
 
-public class GameLayer extends Layer {
+public class EnimiesLayer extends Layer {
 	SpriteSheet run;
 	SpriteSheet idle;
 	SpriteSheet attack;
@@ -34,7 +33,7 @@ public class GameLayer extends Layer {
 	AnimationState arcIdle = new AnimationState();
 	StateMachine stateMachine = new StateMachine();
 
-	protected GameLayer(String name, Layer.LayerType type) {
+	protected EnimiesLayer(String name, Layer.LayerType type) {
 		super(name, type);
 	}
 
@@ -75,7 +74,7 @@ public class GameLayer extends Layer {
 		Application.Get().getDispatcher().addEventListener(MousePressedEvent.class, this::onMousePressedEvent);
 		Application.Get().getDispatcher().addEventListener(KeyPressedEvent.class, this::onKeyPressedEvent);
 		Application.Get().getDispatcher().addEventListener(MouseMovedEvent.class, this::onMouseMovedEvent);
-		EngineLogger.Get().info("Game Layer attach");
+		EngineLogger.Get().info("Enimies Layer attach");
 		
 	}
 
@@ -90,19 +89,19 @@ public class GameLayer extends Layer {
 		player.update(ts);
 		player.setState(State.IDLE);
 			
-		if(Keyboard.isKeyPressed(KeyEvent.VK_W)) { 
+		if(Keyboard.isKeyPressed(KeyEvent.VK_UP)) { 
 			player.setyPos(player.getyPos() - 500);
 			player.setState(State.RUN);
 		}
-		if(Keyboard.isKeyPressed(KeyEvent.VK_S)) {
+		if(Keyboard.isKeyPressed(KeyEvent.VK_DOWN)) {
 			player.setyPos(player.getyPos() + 500);
 			player.setState(State.RUN);
 		}
-		if(Keyboard.isKeyPressed(KeyEvent.VK_A)) { 
+		if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)) { 
 			player.setxPos(player.getxPos() - 500);
 			player.setState(State.RUN);
 		}
-		if(Keyboard.isKeyPressed(KeyEvent.VK_D)) {
+		if(Keyboard.isKeyPressed(KeyEvent.VK_RIGHT)) {
 			player.setxPos(player.getxPos() + 500);
 			player.setState(State.RUN);
 		}	
@@ -111,10 +110,7 @@ public class GameLayer extends Layer {
 
 	@Override
 	public void onRender() {
-		RenderCommand.clearScreen(Color.black);
-		Renderer2D.draw(background);
-		Renderer2D.draw(player);
-		
+		Renderer2D.draw(player);	
 	}
 	
 	@Override
@@ -132,5 +128,4 @@ public class GameLayer extends Layer {
 	protected boolean onMouseMovedEvent(MouseMovedEvent e) {
 		return false;
 	}
-
 }

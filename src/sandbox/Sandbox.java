@@ -8,6 +8,7 @@ import com.game.layer.Layer;
 public class Sandbox extends Application {
 	private Layer uiLayer;
 	private Layer gameLayer;
+	private Layer enimiesLayer;
 
 	@Override
 	public void clientInit() {
@@ -18,11 +19,14 @@ public class Sandbox extends Application {
 		
 		uiLayer = new UILayer("Ui Layer", Layer.LayerType.Overlay);
 		gameLayer = new GameLayer("Game layer", Layer.LayerType.Standard);
+		enimiesLayer = new EnimiesLayer("Enimies Layer", Layer.LayerType.Standard);
 		pushLayer(gameLayer);
 		pushOverlay(uiLayer);
+		pushLayer(enimiesLayer);
 		
 		uiLayer.onAttach(); 
 		gameLayer.onAttach();
+		enimiesLayer.onAttach();
 		
 	}
 

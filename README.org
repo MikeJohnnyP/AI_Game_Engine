@@ -16,10 +16,21 @@ Engine dùng để phát triển game đối kháng, chú trọng vào việc ph
     - [X] JavaLogger
     - [ ] NullLogger
   - [X] Event
-  - [ ] Input
-  - [ ] 
-- Tiles editor
+  - [X] Render Frame
+  - [X] Layer System
+  - [X] Global Input
+  - [ ] Game Loop (Fixed time steps)
+  - [-] Renderer
+    - [X] Render Command
+    - [X] Renderer 2D
+    - [ ] Optimize
+  - [X] Animation System (Basic, 2D tiles sheet) 
+  - [X] Entity (Basic)
+  - [X] Sprite
+  - [X] Scalr (thư viện scale hình ảnh)
+  - 
 - Triển khai đồ hoạ
 - AI
 ...
 /comming soon/
+

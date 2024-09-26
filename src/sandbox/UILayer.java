@@ -19,7 +19,7 @@ public class UILayer extends Layer {
 
 	@Override
 	public void onAttach() {
-		System.out.println("UI Layer attach");
+		EngineLogger.Get().info("UI Layer attach");
 		Application.Get().getDispatcher().addEventListener(MousePressedEvent.class, this::onMousePressedEvent);
 		Application.Get().getDispatcher().addEventListener(KeyPressedEvent.class, this::onKeyPressedEvent);
 		

@@ -34,8 +34,6 @@ public class SpriteSheet extends Sprite {
 		this.currentFrame = 0;
 		this.spritePerWidth = spritePerWidth * scale;
 		this.spritePerHeight = spritePerHeight * scale;
-		System.out.println(this.w);
-		System.out.println(this.h);
 		imgArray = getImgArray();
 		
 	}
