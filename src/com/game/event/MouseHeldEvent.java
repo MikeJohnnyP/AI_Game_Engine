@@ -15,7 +15,6 @@ public class MouseHeldEvent implements EventContext {
 
 	@Override
 	public void close() throws Exception {
-		// TODO Auto-generated method stub
 		
 	}
 

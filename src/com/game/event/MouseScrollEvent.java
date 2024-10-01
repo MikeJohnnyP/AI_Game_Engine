@@ -15,7 +15,6 @@ public class MouseScrollEvent implements EventContext {
 
 	@Override
 	public void close() throws Exception {
-		// TODO Auto-generated method stub
 		
 	}
 

@@ -34,13 +34,12 @@ public class TimeSteps {
 		this.timeScale = timeScale;
 	}
 	
-	public double getTimeSpeed() {
-		return timeScale * deltaTime;
+	public float getTimeSpeed() {
+		return (float) (timeScale * deltaTime);
 	}
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return String.valueOf(deltaTime);
 	}
 

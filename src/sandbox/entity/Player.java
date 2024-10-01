@@ -14,21 +14,12 @@ public class Player implements Entity {
 	boolean isRun = false;
 	boolean isIdle = false;
 	
-	private int xPos;
-	private int yPos;
-	
-	private int relativePosX;
-	private int relativePosY;
-	
-	
-	public Rectangle2D rectCollide = new Rectangle2D.Double();
+	public Rectangle2D rectCollide = new Rectangle2D.Float();
 
-	public Player(StateMachine stateMachine, int posX, int posY) {
+	public Player(StateMachine stateMachine, float posX, float posY) {
 		this.stateMachine = stateMachine;
-		this.xPos = posX;
-		this.yPos = posY;
-		this.relativePosX = posX;
-		this.relativePosY = posY;
+		Sprite temp = stateMachine.getState().getCurrentSprite();
+		this.rectCollide.setFrame(posX, posY, temp.getWidth(), temp.getHeight());
 	}
 
 	@Override
@@ -38,25 +29,24 @@ public class Player implements Entity {
 
 	@Override
 	public void setSprite(Sprite sprite) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public int getxPos() {
-		return xPos;
+	public float getxPos() {
+		return (float) rectCollide.getX();
 	}
 	@Override
-	public void setxPos(int xPos) {
-		this.xPos = xPos;
+	public void setxPos(float xPos) {
+		this.rectCollide.setFrame(xPos, rectCollide.getY(), rectCollide.getWidth(), rectCollide.getHeight());	
 	}
 	@Override
-	public int getyPos() {
-		return yPos;
+	public float getyPos() {
+		return (float) rectCollide.getY();
 	}
 	@Override
-	public void setyPos(int yPos) {
-		this.yPos = yPos;
+	public void setyPos(float yPos) {
+		this.rectCollide.setFrame(rectCollide.getX(), yPos, rectCollide.getWidth(), rectCollide.getHeight());	
 	}
 
 	@Override
@@ -71,30 +61,8 @@ public class Player implements Entity {
 	}
 
 	@Override
-	public int getRelativeXPos() {
-		return relativePosX;
-	}
-
-	@Override
-	public int getRelativeYPos() {
-		return relativePosY;
-	}
-
-	@Override
 	public boolean isCollide(Rectangle2D rect) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public void setRelativePosX(int relativePosX) {
-		this.relativePosX = relativePosX;
-		
-	}
-
-	@Override
-	public void setRelativePosY(int relativePosY) {
-		this.relativePosY = relativePosY;
+		return rectCollide.intersects(rect);
 	}
 
 	@Override
@@ -107,8 +75,5 @@ public class Player implements Entity {
 	public Rectangle2D getRect() {
 		return rectCollide;
 	}
-	
-	
-	
 	
 }

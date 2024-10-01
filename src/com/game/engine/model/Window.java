@@ -3,12 +3,9 @@ package com.game.engine.model;
 import java.awt.Canvas;
 import java.awt.Dimension;
 
-import javax.swing.JComponent;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 import com.game.engine.view.AView;
-import com.game.event.EventDispatcher;
 import com.game.logger.EngineLogger;
 
 public class Window {

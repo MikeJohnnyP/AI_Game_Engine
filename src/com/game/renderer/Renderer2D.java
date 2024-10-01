@@ -21,7 +21,6 @@ public class Renderer2D{
 
 	
 	public static void beginScene() {
-		// TODO Auto-generated method stub
 		
 	}
 
@@ -34,7 +33,6 @@ public class Renderer2D{
 	}
 	
 	public static void endScenne() {
-		// TODO Auto-generated method stub
 		
 	}
 

@@ -1,6 +1,5 @@
 package sandbox;
 
-import java.awt.Color;
 import java.awt.event.KeyEvent;
 
 import com.game.AssetPool;
@@ -17,7 +16,6 @@ import com.game.input.Keyboard;
 import com.game.input.Mouse;
 import com.game.layer.Layer;
 import com.game.logger.EngineLogger;
-import com.game.renderer.RenderCommand;
 import com.game.renderer.Renderer2D;
 import com.game.time.TimeSteps;
 
@@ -80,29 +78,29 @@ public class EnimiesLayer extends Layer {
 
 	@Override
 	public void onDettach() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void onUpdate(TimeSteps ts) {
+		float speed = 5 * ts.getTimeSpeed();
 		player.update(ts);
 		player.setState(State.IDLE);
 			
 		if(Keyboard.isKeyPressed(KeyEvent.VK_UP)) { 
-			player.setyPos(player.getyPos() - 500);
+			player.setyPos(player.getyPos() - speed);
 			player.setState(State.RUN);
 		}
 		if(Keyboard.isKeyPressed(KeyEvent.VK_DOWN)) {
-			player.setyPos(player.getyPos() + 500);
+			player.setyPos(player.getyPos() + speed);
 			player.setState(State.RUN);
 		}
 		if(Keyboard.isKeyPressed(KeyEvent.VK_LEFT)) { 
-			player.setxPos(player.getxPos() - 500);
+			player.setxPos(player.getxPos() - speed);
 			player.setState(State.RUN);
 		}
 		if(Keyboard.isKeyPressed(KeyEvent.VK_RIGHT)) {
-			player.setxPos(player.getxPos() + 500);
+			player.setxPos(player.getxPos() + speed);
 			player.setState(State.RUN);
 		}	
 		

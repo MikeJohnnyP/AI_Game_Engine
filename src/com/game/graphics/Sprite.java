@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 
 import com.game.scale.Scalr;
 import com.game.scale.Scalr.Method;
-import com.game.scale.Scalr.Mode;
 
 public class Sprite {
 	protected int xPos = 0;

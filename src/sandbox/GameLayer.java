@@ -13,7 +13,6 @@ import com.game.event.MouseMovedEvent;
 import com.game.event.MousePressedEvent;
 import com.game.graphics.SpriteSheet;
 import com.game.graphics.Sprite;
-import com.game.graphics.Texture;
 import com.game.input.Keyboard;
 import com.game.input.Mouse;
 import com.game.layer.Layer;
@@ -69,7 +68,7 @@ public class GameLayer extends Layer {
 		stateMachine.addState(State.RUN, arcRun);
 		stateMachine.setDefaultState(State.IDLE);
 		
-		player = new Player(stateMachine, 640, 350);
+		player = new Player(stateMachine, 450, 450);
 		
 		background = new Sprite(AssetPool.Get().getAsset("BlueBackground"), 0, 0, 1280, 720);
 		Application.Get().getDispatcher().addEventListener(MousePressedEvent.class, this::onMousePressedEvent);
@@ -81,31 +80,34 @@ public class GameLayer extends Layer {
 
 	@Override
 	public void onDettach() {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void onUpdate(TimeSteps ts) {
+		float speed = 500 * ts.getTimeSpeed();
 		player.update(ts);
 		player.setState(State.IDLE);
 			
 		if(Keyboard.isKeyPressed(KeyEvent.VK_W)) { 
-			player.setyPos(player.getyPos() - 500);
+			player.setyPos(player.getyPos() - speed);
 			player.setState(State.RUN);
 		}
 		if(Keyboard.isKeyPressed(KeyEvent.VK_S)) {
-			player.setyPos(player.getyPos() + 500);
+			player.setyPos(player.getyPos() + speed);
 			player.setState(State.RUN);
 		}
 		if(Keyboard.isKeyPressed(KeyEvent.VK_A)) { 
-			player.setxPos(player.getxPos() - 500);
+			player.setxPos(player.getxPos() - speed);
 			player.setState(State.RUN);
 		}
 		if(Keyboard.isKeyPressed(KeyEvent.VK_D)) {
-			player.setxPos(player.getxPos() + 500);
+			player.setxPos(player.getxPos() + speed);
 			player.setState(State.RUN);
 		}	
+
+		System.out.println(player.getxPos());
+		System.out.println(player.getyPos());
 		
 	}
 

@@ -1,7 +1,5 @@
 package com.game.layer;
 
-import java.awt.Graphics;
-
 import com.game.event.KeyPressedEvent;
 import com.game.event.KeyReleasedEvent;
 import com.game.event.MouseMovedEvent;
