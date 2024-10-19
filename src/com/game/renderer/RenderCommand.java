@@ -36,6 +36,10 @@ public class RenderCommand {
 	public static void setColor(Color color) {
 			g2d.setColor(color);
 	}
+
+	public static void setFont(Font font) {
+		g2d.setFont(font);	
+	}
 	
 	public static void clearScreen(Color color) {
 		setColor(color);
@@ -84,10 +88,16 @@ public class RenderCommand {
 	public static void drawImg(Image img, int x, int y, int w, int h) {
 		Graphics2D draw2D = (Graphics2D) g2d.create();
 		
-	    double translateX = x * ts.getTimeSpeed();
-	    double translateY = y * ts.getTimeSpeed();
+	    draw2D.translate(x, y);
+			
+		draw2D.drawImage(img, 0, 0, w, h, null);
+		draw2D.dispose();
+	}
 
-	    draw2D.translate(translateX, translateY);
+	public static void drawImg(Image img, float x, float y, int w, int h) {
+		Graphics2D draw2D = (Graphics2D) g2d.create();
+		
+	    draw2D.translate(x, y);
 			
 		draw2D.drawImage(img, 0, 0, w, h, null);
 		draw2D.dispose();
@@ -101,6 +111,10 @@ public class RenderCommand {
 		draw2D.drawImage(entity.getSprite().getImg(), 0, 0, entity.getSprite().getWidth(), entity.getSprite().getHeight(), null);
 		draw2D.dispose();
 		g2d.draw(entity.getRect());
+	}
+
+	public static void drawString(String text, int xPos, int yPos){
+		g2d.drawString(text, xPos, yPos);
 	}
 	
 	public static GraphicsConfiguration getGraphicsConfiguration() {

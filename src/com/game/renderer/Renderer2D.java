@@ -1,12 +1,19 @@
 package com.game.renderer;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+import java.awt.Shape;
 
 import com.game.Entity;
 import com.game.graphics.Sprite;
 
 public class Renderer2D{
+
+	public static final Font DEFAULT_FONT = new Font("Georgia", Font.BOLD, 20); 
+	public static final Color DEFAULT_COLOR = Color.white;
+
 
 	public static void setRenderHint(Graphics2D g2d) {
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
@@ -31,7 +38,41 @@ public class Renderer2D{
 	public static void draw(Entity entity) {
 		RenderCommand.drawImg(entity);
 	}
-	
+
+	public static void draw(Shape shape){
+		RenderCommand.setColor(DEFAULT_COLOR);
+		RenderCommand.drawShape(shape);
+	}
+
+	public static void draw(Shape shape, Color color){
+		RenderCommand.setColor(color);
+		RenderCommand.drawShape(shape);
+	}
+
+	public static void drawString(String string, int x, int y){
+		RenderCommand.setColor(DEFAULT_COLOR);
+		RenderCommand.setFont(DEFAULT_FONT);
+		RenderCommand.drawString(string, x, y);
+	}
+
+	public static void drawString(String string, int x, int y, Color color){
+		RenderCommand.setColor(color);
+		RenderCommand.setFont(DEFAULT_FONT);
+		RenderCommand.drawString(string, x, y);
+	}	
+
+	public static void drawString(String string, int x, int y, Font font){
+		RenderCommand.setColor(DEFAULT_COLOR);
+		RenderCommand.setFont(font);
+		RenderCommand.drawString(string, x, y);
+	}	
+
+	public static void drawString(String string, int x, int y, Font font, Color color){
+		RenderCommand.setColor(color);
+		RenderCommand.setFont(font);
+		RenderCommand.drawString(string, x, y);
+	}	
+
 	public static void endScenne() {
 		
 	}
