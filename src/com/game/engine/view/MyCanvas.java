@@ -2,6 +2,8 @@ package com.game.engine.view;
 
 
 import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics2D;
 
 import java.awt.event.KeyEvent;
@@ -42,7 +44,8 @@ public class MyCanvas extends Canvas implements MouseListener, KeyListener, Mous
 	
 	public MyCanvas(WindowSpec spec) {
 		super();
-		this.setSize(spec.getWidth(), spec.getHeight());
+		// this.setSize(spec.getWidth(), spec.getHeight());
+		this.setPreferredSize(new Dimension(spec.getWidth(), spec.getHeight()));
 		this.setFocusable(true);
 		this.addMouseListener(this);
 		this.addMouseMotionListener(this);
@@ -71,7 +74,10 @@ public class MyCanvas extends Canvas implements MouseListener, KeyListener, Mous
 			RenderCommand.setGraphics(g2d);
 			RenderCommand.setGraphicsConfiguration(getGraphicsConfiguration());
 			layerStack = Application.Get().getLayerStack();
-			
+			g2d.setColor(Color.black);	
+			WindowSpec data = Application.Get().getWindow().getWindowData();
+			g2d.fillRect(0, 0, data.getWidth(), data.getHeight());
+
 			for(Layer layer : layerStack.Get()) {
 				layer.onRender();
 			}

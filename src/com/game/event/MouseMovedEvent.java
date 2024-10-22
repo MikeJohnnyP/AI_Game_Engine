@@ -1,29 +1,29 @@
 package com.game.event;
 
 public class MouseMovedEvent implements EventContext{
-	private double xPosition, yPosition;
-	private double xOffset, yOffset;
+	private float xPosition, yPosition;
+	private float xOffset, yOffset;
 	
-	public MouseMovedEvent(double x, double y, double offsetX, double offsetY) {
+	public MouseMovedEvent(float x, float y, float offsetX, float offsetY) {
 		xPosition = x;
 		yPosition = y;
 		xOffset = offsetX;
 		yOffset = offsetY;
 	}
 
-	public double getxPosition() {
+	public float getxPosition() {
 		return xPosition;
 	}
 
-	public double getyPosition() {
+	public float getyPosition() {
 		return yPosition;
 	}
 
-	public double getxOffset() {
+	public float getxOffset() {
 		return xOffset;
 	}
 
-	public double getyOffset() {
+	public float getyOffset() {
 		return yOffset;
 	}
 	

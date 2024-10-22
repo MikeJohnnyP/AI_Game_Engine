@@ -5,15 +5,13 @@ import java.awt.Graphics2D;
 
 import com.game.Entity;
 import com.game.engine.controller.Application;
-import com.game.engine.model.Window.WindowData;
-import com.game.time.TimeSteps;
+import com.game.engine.model.WindowSpec;
 
 
 public class RenderCommand {
 	
 	private static Graphics2D g2d;
 	private static GraphicsConfiguration gc;
-	private static TimeSteps ts;
 	
 	private RenderCommand() {}
 
@@ -23,14 +21,6 @@ public class RenderCommand {
 	
 	public static void setGraphicsConfiguration(GraphicsConfiguration currentGc) {
 		gc = currentGc;
-	}
-	
-	public static void setTimeSteps(TimeSteps currentTs) {
-		ts = currentTs;
-	}
-	
-	public static void setTimeSteps(double deltaTime) {
-		ts.setDeltaTime(deltaTime);
 	}
 	
 	public static void setColor(Color color) {
@@ -43,12 +33,11 @@ public class RenderCommand {
 	
 	public static void clearScreen(Color color) {
 		setColor(color);
-		WindowData data = Application.Get().getWindow().getWindowData();
-		g2d.fillRect(0, 0, data.width, data.height);
+		WindowSpec data = Application.Get().getWindow().getWindowData();
+		g2d.fillRect(0, 0, data.getWidth(), data.getHeight());
 	}
 	
 	public static void drawRect(int x, int y, int sizeX, int sizeY) {
-		setColor(Color.white);
 		g2d.drawRect(x, y, sizeX, sizeY);
 	}
 	
@@ -58,7 +47,6 @@ public class RenderCommand {
 	}
 	
 	public static void fillRect(int x, int y, int sizeX, int sizeY) {
-		setColor(Color.white);
 		g2d.fillRect(x, y, sizeX, sizeY);
 	}
 	
@@ -79,10 +67,6 @@ public class RenderCommand {
 	
 	public static void drawShape(Shape shape) {
 		g2d.fill(shape);
-	}
-	
-	public static void drawImg(Image img, int w, int h) {
-		g2d.drawImage(img, 0, 0, null);
 	}
 	
 	public static void drawImg(Image img, int x, int y, int w, int h) {

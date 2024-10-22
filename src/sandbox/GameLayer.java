@@ -1,6 +1,5 @@
 package sandbox;
 
-import java.awt.Color;
 import java.awt.event.KeyEvent;
 
 import com.game.AssetPool;
@@ -17,7 +16,6 @@ import com.game.input.Keyboard;
 import com.game.input.Mouse;
 import com.game.layer.Layer;
 import com.game.logger.EngineLogger;
-import com.game.renderer.RenderCommand;
 import com.game.renderer.Renderer2D;
 import com.game.time.TimeSteps;
 
@@ -105,15 +103,10 @@ public class GameLayer extends Layer {
 			player.setxPos(player.getxPos() + speed);
 			player.setState(State.RUN);
 		}	
-
-		System.out.println(player.getxPos());
-		System.out.println(player.getyPos());
-		
 	}
 
 	@Override
 	public void onRender() {
-		RenderCommand.clearScreen(Color.black);
 		Renderer2D.draw(background);
 		Renderer2D.draw(player);
 		

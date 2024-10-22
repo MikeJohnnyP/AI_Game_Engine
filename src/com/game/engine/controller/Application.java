@@ -133,51 +133,52 @@ public class Application {
 	
 	public void run() {
 		clientInit();
-		//final float MAX_DELTA_TIME = 0.05f;
-		final double FIXED_TIME_STEP = 1.0 / spec.getMaxFPS();
-		double accumulator = 0.0;
+		final float MAX_DELTA_TIME = 0.05f;
+		// final double FIXED_TIME_STEP = 1.0 / spec.getMaxFPS();
+		// double accumulator = 0.0;
 		long lastFrameTime = System.nanoTime();
 		
 		while(isWindowClose && true) {
 			//RenderCommand.setGraphicsConfiguration(canvas.getGraphicsConfiguration());
-			//while (System.nanoTime() - lastFrameTime < FIXED_TIME_STEP);
+			// while (System.nanoTime() - lastFrameTime < FIXED_TIME_STEP);
 			long currentFrameTime = System.nanoTime();
 			
 			double elapsedTime = (currentFrameTime - lastFrameTime)/1_000_000_000.0;
-			ts.setDeltaTime(FIXED_TIME_STEP); 
+			ts.setDeltaTime(elapsedTime); 
 			
-			accumulator += elapsedTime;
+			// accumulator += elapsedTime;
 			
 			lastFrameTime = currentFrameTime;
 			
-//			while (ts.getDeltaTime() > MAX_DELTA_TIME) {
-//				frameData.IsCatchUpPhase = true;
-//
-//				for (Layer layer : layerStack.Get()) {
-//					layer.onUpdate(MAX_DELTA_TIME);
-//				}
-//				ts.setDeltaTime(ts.getDeltaTime() - MAX_DELTA_TIME);
-//				System.out.println("CatchUp Fps" + ts);
-//				RenderCommand.setTimeSteps(MAX_DELTA_TIME);
-//				canvas.onRender();
-//				
-//			}
-//			frameData.IsCatchUpPhase = false;
-			
-			if(accumulator >= 3) {
-				accumulator = FIXED_TIME_STEP;
-			}
-			
-			while(accumulator >= FIXED_TIME_STEP) {
-				for(Layer layer : layerStack.Get()) {
-					ts.setDeltaTime(FIXED_TIME_STEP);
+			while (ts.getDeltaTime() > MAX_DELTA_TIME) {
+				frameData.IsCatchUpPhase = true;
+
+				for (Layer layer : layerStack.Get()) {
 					layer.onUpdate(ts);
 				}
-				accumulator -= FIXED_TIME_STEP;
+				ts.setDeltaTime(ts.getDeltaTime() - MAX_DELTA_TIME);
+				EngineLogger.Get().info("CatchUp Fps: " + ts);
+				canvas.onRender();
+				
 			}
+			frameData.IsCatchUpPhase = false;
+
+			for (Layer layer : layerStack.Get()) {
+				layer.onUpdate(ts);
+			}
+			
+			// if(accumulator >= 3) {
+			// 	accumulator = FIXED_TIME_STEP;
+			// }
+			
+			// while(accumulator >= FIXED_TIME_STEP) {
+			// 	for(Layer layer : layerStack.Get()) {
+			// 		ts.setDeltaTime(FIXED_TIME_STEP);
+			// 		layer.onUpdate(ts);
+			// 	}
+			// 	accumulator -= FIXED_TIME_STEP;
+			// }
 			frameData.FrameIndex++;
-			RenderCommand.setTimeSteps(ts);
-			RenderCommand.setTimeSteps(FIXED_TIME_STEP);
 			canvas.onRender();
 		}
 		clientShutdown();

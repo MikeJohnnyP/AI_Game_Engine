@@ -1,7 +1,6 @@
 package com.game.engine.model;
 
 import java.awt.Canvas;
-import java.awt.Dimension;
 
 import javax.swing.JFrame;
 
@@ -9,21 +8,11 @@ import com.game.engine.view.AView;
 import com.game.logger.EngineLogger;
 
 public class Window {
-	public class WindowData {
-		public int width, height;
-		public String title;
-		public int maxFPS;
-	}
-	
-	private WindowData windowData;
+	private WindowSpec windowData;
 	private JFrame frame;
 	
 	public Window(WindowSpec spec) {
-		windowData = new WindowData();
-		windowData.width = spec.getWidth();
-		windowData.height = spec.getHeight();
-		windowData.title = spec.getTitle();
-		windowData.maxFPS = spec.getMaxFPS();
+		this.windowData = spec;
 		EngineLogger.Get().info("WindowData: " + spec.getWidth() + ", " + spec.getHeight() + ", "+ spec.getTitle());
 	}
 	
@@ -31,19 +20,15 @@ public class Window {
 		System.setProperty("sun.java2d.opengl", "True");
 		//System.setProperty("sun.java2d.trace", "log");
 		frame = new JFrame();
-		Dimension dimension = new Dimension(windowData.width, windowData.height);
-		frame.setMinimumSize(dimension);
-		frame.setMaximumSize(dimension);
-		frame.setPreferredSize(dimension);
+		frame.setSize(windowData.getWidth(), windowData.getHeight());
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
 		frame.setLocationRelativeTo(null);
-		frame.pack();
 		frame.setVisible(true);
 		return true;
 	}
 	
-	public WindowData getWindowData() {
+	public WindowSpec getWindowData() {
 		return windowData;
 	}
 	
@@ -61,6 +46,7 @@ public class Window {
 		} catch (Exception e) {
 			EngineLogger.Get().severe("Exception: " + e.getMessage());
 		}
+		frame.pack();
 		frame.revalidate();
 		frame.repaint();	
 	}
@@ -75,6 +61,7 @@ public class Window {
 		} catch (Exception e) {
 			EngineLogger.Get().severe("Exception: " + e.getMessage());
 		}
+		frame.pack();
 		frame.revalidate();
 		frame.repaint();	
 	}

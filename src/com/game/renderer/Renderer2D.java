@@ -34,6 +34,26 @@ public class Renderer2D{
 	public static void draw(Sprite sprite) {
 		RenderCommand.drawImg(sprite.getImg(), sprite.getXpos(), sprite.getYpos(), sprite.getWidth(), sprite.getHeight());
 	}
+
+	public static void drawRect(int x, int y, int width, int height) {
+		RenderCommand.setColor(DEFAULT_COLOR);
+		RenderCommand.drawRect(x, y, width, height);
+	}
+
+	public static void drawRect(int x, int y, int width, int height, Color color) {
+		RenderCommand.setColor(color);
+		RenderCommand.drawRect(x, y, width, height);
+	}
+
+	public static void fillRect(int x, int y, int width, int height) {
+		RenderCommand.setColor(DEFAULT_COLOR);
+		RenderCommand.drawRect(x, y, width, height);
+	}
+
+	public static void fillRect(int x, int y, int width, int height, Color color) {
+		RenderCommand.setColor(color);
+		RenderCommand.drawRect(x, y, width, height);
+	}
 	
 	public static void draw(Entity entity) {
 		RenderCommand.drawImg(entity);
