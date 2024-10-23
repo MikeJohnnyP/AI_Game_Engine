@@ -8,6 +8,7 @@ import chess_engine.view.BoardUI;
 public class GameController {
     IBoard board;  
     BoardUI boardUI;
+    
 
     public GameController(IBoard board) {
         this.board = board;

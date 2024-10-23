@@ -9,6 +9,12 @@ public class Board0x88 implements IBoard {
     public Board0x88(String fen){
         this.fen = fen; 
         this.square = FenUltility.loadPositionFromPen(this.fen);
+        for (int i = 0; i < square.length; i++) {
+           for (int j = 0; j < square[i].length; j++) {
+                System.out.print(square[i][j].getPiece().getPieceType());
+           } 
+           System.out.println();
+        }
     }
 
     @Override

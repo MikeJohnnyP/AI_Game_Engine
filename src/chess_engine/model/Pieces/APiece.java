@@ -3,13 +3,13 @@ package chess_engine.model.Pieces;
 public abstract class APiece {
 
     public class Pieces {
-        public static final int NONE = 0;
-        public static final int KING = 1;
-        public static final int PAWN = 2;
-        public static final int KNIGHT = 3; 
-        public static final int BISHOP = 4;
-        public static final int ROOK = 5;
-        public static final int QUEEN = 6;
+        public static final int KING = 0;
+        public static final int PAWN = 1;
+        public static final int KNIGHT = 2; 
+        public static final int BISHOP = 3;
+        public static final int ROOK = 4;
+        public static final int QUEEN = 5;
+        public static final int NONE = 6;
 
         public static final int WHITE = 8;
         public static final int BLACK = 16;
@@ -32,7 +32,7 @@ public abstract class APiece {
     }
 
     public int getPieceColour() {
-        return pieceCode & colourMask;
+        return (pieceCode & colourMask) == 8 ? Pieces.WHITE : Pieces.BLACK;
     }
 
     @Override

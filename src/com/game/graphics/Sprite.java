@@ -3,6 +3,7 @@ package com.game.graphics;
 
 import java.awt.image.BufferedImage;
 
+import com.game.logger.EngineLogger;
 import com.game.scale.Scalr;
 import com.game.scale.Scalr.Method;
 
@@ -16,6 +17,7 @@ public class Sprite {
 	protected BufferedImage scaledImg;
 
     public Sprite(Texture texture) {
+		EngineLogger.Get().info("Created Sprite: " + texture.getName());
 		this.w = texture.getTextureWidth();
 		this.h = texture.getTextureHeight();
 		this.texName = texture.getName();
@@ -24,6 +26,7 @@ public class Sprite {
 	}
     
     public Sprite(Texture texture, int xPos, int yPos) {
+		EngineLogger.Get().info("Created Sprite: " + texture.getName());
     	this.xPos = xPos;
     	this.yPos = yPos;
 		this.w = texture.getTextureWidth();
@@ -34,6 +37,7 @@ public class Sprite {
 	}
     
     public Sprite(Texture texture, int xPos, int yPos, int scale) {
+		EngineLogger.Get().info("Created Sprite: " + texture.getName());
     	this.xPos = xPos;
     	this.yPos = yPos;
 		this.w = texture.getTextureWidth();
@@ -44,6 +48,7 @@ public class Sprite {
 	}
     
     public Sprite(Texture texture, int xPos, int yPos, int scaleX, int scaleY) {
+		EngineLogger.Get().info("Created Sprite: " + texture.getName());
     	this.xPos = xPos;
     	this.yPos = yPos;
 		this.w = texture.getTextureWidth();
@@ -54,6 +59,7 @@ public class Sprite {
 	}
     
     public Sprite(BufferedImage img) {
+		EngineLogger.Get().info("Created Sprite: " + this.getClass().getName());
     	this.xPos = 0;
     	this.yPos = 0;
     	this.w = img.getWidth();
@@ -77,7 +83,8 @@ public class Sprite {
 		if (result != null) {
 			this.w = result.getWidth();
 			this.h = result.getHeight();
-		}
+			EngineLogger.Get().info("Scale Image Success: " + this.texName);
+		} else EngineLogger.Get().info("Scale Image Failed: " + this.texName);
 		return result;
 	}
 	
@@ -86,7 +93,8 @@ public class Sprite {
 		if (result != null) {
 			this.w = targetWidth;
 			this.h = targetHeight;
-		}
+			EngineLogger.Get().info("Scale Image Success: " + this.texName);
+		} else EngineLogger.Get().info("Scale Image Failed: " + this.texName);
 		return result;
 	}
 

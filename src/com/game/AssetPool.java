@@ -36,7 +36,7 @@ public class AssetPool {
 	}
 	
 	public Texture loadAsset(String name, String path) {
-		Texture temp = new Texture(path);
+		Texture temp = new Texture(path, name);
 		resource.put(name, temp);
 		return temp;
 		

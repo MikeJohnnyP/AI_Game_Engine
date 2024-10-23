@@ -3,7 +3,7 @@ package chess_engine.model.Pieces;
 public class Knight extends APiece {
 
     public Knight(int color) {
-        super(Pieces.KING | color);
+        super(Pieces.KNIGHT | color);
     }
 
     @Override
