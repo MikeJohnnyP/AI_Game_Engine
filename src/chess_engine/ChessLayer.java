@@ -9,6 +9,7 @@ import com.game.time.TimeSteps;
 
 import chess_engine.controller.GameController;
 import chess_engine.model.Board0x88;
+import chess_engine.model.Disc;
 
 public class ChessLayer extends Layer {
 
@@ -21,7 +22,7 @@ public class ChessLayer extends Layer {
 
     @Override
     public void onAttach() {
-        gControl = new GameController(new Board0x88(fen));        
+        gControl = new GameController(new Board0x88(fen, Disc.BLACK));        
 		Application.Get().getDispatcher().addEventListener(MousePressedEvent.class, this::onMousePressedEvent);
 		Application.Get().getDispatcher().addEventListener(KeyPressedEvent.class, this::onKeyPressedEvent);
 		Application.Get().getDispatcher().addEventListener(MouseMovedEvent.class, this::onMouseMovedEvent);
@@ -48,6 +49,7 @@ public class ChessLayer extends Layer {
 	
 	@Override
 	protected boolean onMousePressedEvent(MousePressedEvent e) {
+        gControl.MousePressedEvent(e);
 		return false;
 	}
 	

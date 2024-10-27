@@ -41,6 +41,10 @@ public class Coord {
         return (fileIndex + rankIndex) % 2 != 0;
     }
 
+    public int getIndex() {
+        return rankIndex * 8 + fileIndex;
+    }
+
     @Override
     public boolean equals(Object obj) {
         Coord other = (Coord) obj; 

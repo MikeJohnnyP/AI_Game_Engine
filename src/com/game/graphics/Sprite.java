@@ -83,8 +83,7 @@ public class Sprite {
 		if (result != null) {
 			this.w = result.getWidth();
 			this.h = result.getHeight();
-			EngineLogger.Get().info("Scale Image Success: " + this.texName);
-		} else EngineLogger.Get().info("Scale Image Failed: " + this.texName);
+		} 
 		return result;
 	}
 	
@@ -93,8 +92,7 @@ public class Sprite {
 		if (result != null) {
 			this.w = targetWidth;
 			this.h = targetHeight;
-			EngineLogger.Get().info("Scale Image Success: " + this.texName);
-		} else EngineLogger.Get().info("Scale Image Failed: " + this.texName);
+		}
 		return result;
 	}
 

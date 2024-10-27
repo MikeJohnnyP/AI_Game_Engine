@@ -75,7 +75,7 @@ public class Mouse {
 	}
 	
 	public static boolean isMousePressed(int button) {
-		if(MouseState.get(button) == MouseEvent.MOUSE_PRESSED) 
+		if(MouseState.get(button) == MouseEvent.MOUSE_PRESSED && MouseState.get(button) != null) 
 			return true;
 		
 		return false;

@@ -1,20 +1,20 @@
 package chess_engine.model;
 
+
 import chess_engine.chess.Coord;
-import chess_engine.model.Pieces.APiece;
 
 public class Square {
-    private APiece piece;
     private Coord coord;
+    private Disc disc;
 
-    public Square(APiece piece) {
-        this.piece = piece;
+    public Square(Disc disc) {
+        this.disc = disc;
         this.coord.setFile(0);
         this.coord.setRank(0);
     }
 
-    public Square(APiece piece, Coord coord) {
-        this.piece = piece;
+    public Square(Disc disc, Coord coord) {
+        this.disc = disc;
         this.coord = coord;
     }
 
@@ -22,20 +22,36 @@ public class Square {
         return coord;
     }
 
+    public boolean isBlack() {
+        return this.disc == Disc.BLACK;
+    }
+
+    public boolean isWhite() {
+        return this.disc == Disc.WHITE;
+    }
+
+    public boolean isNone() {
+        return this.disc == Disc.NONE;
+    }
+
     public void setCoord(Coord coord) {
         this.coord = coord;
     } 
 
-    public APiece getPiece() {
-        return this.piece;
+    public Disc getDisc() {
+        return this.disc;
     }
 
-    public void setPiece(APiece piece) {
-        this.piece = piece;
+    public void setDisc(Disc disc) {
+        this.disc = disc;
+    }
+
+    public int getSquareIndex() {
+        return this.coord.getIndex();
     }
 
     @Override
     public String toString() {
-        return piece + " " + coord; 
+        return disc + " " + coord; 
     }
 }

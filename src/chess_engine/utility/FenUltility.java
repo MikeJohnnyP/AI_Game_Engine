@@ -1,14 +1,10 @@
 package chess_engine.utility;
 
-import java.util.HashMap;
-
-import chess_engine.chess.Coord;
 import chess_engine.model.Square;
 import chess_engine.model.Pieces.APiece;
 import chess_engine.model.Pieces.Bishop;
 import chess_engine.model.Pieces.King;
 import chess_engine.model.Pieces.Knight;
-import chess_engine.model.Pieces.None;
 import chess_engine.model.Pieces.Pawn;
 import chess_engine.model.Pieces.Queen;
 import chess_engine.model.Pieces.Rook;
@@ -40,7 +36,7 @@ public class FenUltility {
                     if (Character.isDigit(type.charAt(i))) {
                         int skipToNone = Integer.parseInt(Character.toString(type.charAt(i)));
                         for (int j = file; j < skipToNone; j++) {
-                            squares[rank][j] = new Square(new None(0), new Coord(rank, j));
+                            // squares[rank][j] = new Square(new None(0), new Coord(rank, j));
                         }
                         file += skipToNone;
                     } else {
@@ -49,9 +45,9 @@ public class FenUltility {
                         // int pieceType =
                         // pieceTypeFromSymbol.get(Character.toLowerCase(type.charAt(i)));
                         // square[rank][file] = pieceType | pieceColor;
-                        Square temp = new Square(getPiecesFromChar(Character.toLowerCase(type.charAt(i)), pieceColor),
-                                new Coord(rank, file));
-                        squares[rank][file] = temp;
+                        // Square temp = new Square(getPiecesFromChar(Character.toLowerCase(type.charAt(i)), pieceColor),
+                        //         new Coord(rank, file));
+                        // squares[rank][file] = temp;
                         file++;
                     }
                 }

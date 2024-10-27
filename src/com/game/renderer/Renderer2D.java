@@ -1,10 +1,12 @@
 package com.game.renderer;
 
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.Shape;
+import java.awt.Stroke;
 
 import com.game.Entity;
 import com.game.graphics.Sprite;
@@ -13,10 +15,12 @@ public class Renderer2D{
 
 	public static final Font DEFAULT_FONT = new Font("Georgia", Font.BOLD, 20); 
 	public static final Color DEFAULT_COLOR = Color.white;
+	public static final Stroke DEFAULT_STROKE = new BasicStroke();
+	public static final Stroke LARGER_STROKE = new BasicStroke(5);
 
 
 	public static void setRenderHint(Graphics2D g2d) {
-        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_OFF);
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         g2d.setRenderingHint(RenderingHints.KEY_ALPHA_INTERPOLATION, RenderingHints.VALUE_ALPHA_INTERPOLATION_QUALITY);
         g2d.setRenderingHint(RenderingHints.KEY_COLOR_RENDERING, RenderingHints.VALUE_COLOR_RENDER_QUALITY);
         g2d.setRenderingHint(RenderingHints.KEY_DITHERING, RenderingHints.VALUE_DITHER_ENABLE);
@@ -54,6 +58,26 @@ public class Renderer2D{
 		RenderCommand.setColor(color);
 		RenderCommand.drawRect(x, y, width, height);
 	}
+
+	public static void fillCircle(int x, int y, int width, int height, Color color) {
+		RenderCommand.setColor(color);
+		RenderCommand.fillCircle(x, y, width, height);
+	}	
+
+	public static void fillCircle(int x, int y, int width, int height) {
+		RenderCommand.setColor(DEFAULT_COLOR);
+		RenderCommand.fillCircle(x, y, width, height);
+	}	
+
+	public static void drawCircle(int x, int y, int width, int height) {
+		RenderCommand.setColor(DEFAULT_COLOR);
+		RenderCommand.drawCircle(x, y, width, height);
+	}	
+
+	public static void drawCircle(int x, int y, int width, int height, Color color) {
+		RenderCommand.setColor(color);
+		RenderCommand.drawCircle(x, y, width, height);
+	}	
 	
 	public static void draw(Entity entity) {
 		RenderCommand.drawImg(entity);
