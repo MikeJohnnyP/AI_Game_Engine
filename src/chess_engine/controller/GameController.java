@@ -3,7 +3,9 @@ package chess_engine.controller;
 import com.game.event.MouseMovedEvent;
 import com.game.event.MousePressedEvent;
 
+import chess_engine.helper.MoveGenerator;
 import chess_engine.model.Disc;
+import chess_engine.model.GameResult;
 import chess_engine.model.IBoard;
 import chess_engine.model.Player.Player;
 import chess_engine.model.Player.PlayerType;
@@ -15,15 +17,20 @@ public class GameController {
     Player playerWhite;
     Player playerBlack;
     Player playerToMove = null;
+    Player playerNotToMove = null;
+    GameResult result;
 
     public GameController(IBoard board) {
         this.board = board;
         boardUI = new BoardUI(this);
-        this.playerWhite = new Player(PlayerType.Human, Disc.WHITE, this);
-        this.playerBlack = new Player(PlayerType.Human, Disc.BLACK, this);
+        this.playerWhite = new Player(PlayerType.EvilBot, "EvilBot",Disc.WHITE, this);
+        this.playerBlack = new Player(PlayerType.Human, "Humanity",Disc.BLACK, this);
+        this.result = new GameResult(this.playerWhite, this.playerBlack);
     }
 
     public void update() {
+        this.playerWhite.setPlayerDisc(MoveGenerator.countDiscOfPlayer(this.playerWhite.getPlayerColor(), this.board));
+        this.playerBlack.setPlayerDisc(MoveGenerator.countDiscOfPlayer(this.playerBlack.getPlayerColor(), this.board));
     }
 
     public void draw() {
@@ -31,6 +38,7 @@ public class GameController {
         boardUI.drawMousePos();
         boardUI.drawLegalMove();
         boardUI.drawHover();
+        boardUI.drawPlayerInfo();
     }
 
     public void MouseMovedEvent(MouseMovedEvent e) {
@@ -39,7 +47,9 @@ public class GameController {
 
     public void MousePressedEvent(MousePressedEvent e) {
         this.playerToMove = getPlayerToMove();
-        this.playerToMove.update(e);
+        this.playerNotToMove = getPlayerNotToMove();
+        this.playerToMove.update();
+        if(playerNotToMove.isBot()) this.playerNotToMove.update();
     }
 
     public IBoard getBoard() {
@@ -53,5 +63,22 @@ public class GameController {
     Player getPlayerToMove() {
         boolean isWhiteMove = board.getColorToMove() == Disc.WHITE ? true : false;
         return isWhiteMove ? playerWhite : playerBlack;
+    }
+
+    Player getPlayerNotToMove() {
+        boolean isWhiteMove = board.getColorToMove() == Disc.WHITE ? true : false;
+        return isWhiteMove ? playerBlack : playerWhite;
+    }
+
+    public GameResult getGameResult() {
+        return this.result;
+    }
+
+    public Player getPlayerWhite() {
+        return this.playerWhite;
+    }
+
+    public Player getPlayerBlack() {
+        return this.playerBlack;
     }
 }

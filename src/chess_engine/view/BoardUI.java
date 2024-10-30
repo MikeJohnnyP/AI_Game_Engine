@@ -17,6 +17,7 @@ import com.game.renderer.Renderer2D;
 
 import chess_engine.chess.Coord;
 import chess_engine.controller.GameController;
+import chess_engine.model.Disc;
 import chess_engine.model.Square;
 import chess_engine.utility.Vector2;
 
@@ -113,6 +114,10 @@ public class BoardUI {
             Coord coord = new Coord((7 - (int) (ty * 8)), (int) (tx * 8));
             int index = coord.getRank() * 8 + coord.getFile();
 
+            if(index > this.gameController.getBoard().getSquares().length - 1 || index < 0) {
+                return squareIndex;
+            }
+
             squareIndex = this.gameController.getBoard().getSquares()[index];
         }
         return squareIndex;
@@ -143,6 +148,23 @@ public class BoardUI {
                 drawSquare(squares[i * 8 + y].getCoord());
             }
         }
+    }
+
+    public void drawPlayerInfo() {
+        String playerWhiteName = this.gameController.getPlayerWhite().getPlayerName();  
+        int playerWhiteDisc =this.gameController.getPlayerWhite().getPlayerDisc();
+        String playerBlackName = this.gameController.getPlayerBlack().getPlayerName();
+        int playBlackDisc = this.gameController.getPlayerBlack().getPlayerDisc();
+
+        boolean isWhiteTurnToMove = this.gameController.getBoard().getColorToMove() == Disc.WHITE ? true : false;
+        Font whiteFont = isWhiteTurnToMove ? theme.PlayerNameFontChoose : theme.PlayerNameFont;
+        Font blackFont = isWhiteTurnToMove ? theme.PlayerNameFont : theme.PlayerNameFontChoose;
+
+        Color whiteColor = isWhiteTurnToMove ? theme.playerToMoveColor : theme.playerNotToMoveColor;
+        Color blackColor = isWhiteTurnToMove ? theme.playerNotToMoveColor : theme.playerToMoveColor;
+        
+        Renderer2D.drawString(playerWhiteName + ": " + playerWhiteDisc + " White", 755, 266, whiteFont, whiteColor);
+        Renderer2D.drawString(playerBlackName + ": " + playBlackDisc + " Black", 755, 450, blackFont, blackColor);
     }
 
     public static int calcSquareSize() {

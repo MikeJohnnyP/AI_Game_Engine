@@ -2,6 +2,7 @@ package chess_engine.helper;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import chess_engine.model.Disc;
@@ -308,5 +309,16 @@ public class MoveGenerator {
             return false;
         } 
            
+    }
+
+    public static int countDiscOfPlayer(Disc disc, IBoard board) {
+        int countDisc = 0;
+        Square[] squares = board.getSquares();
+        for (Square square : squares) {
+            if(square.getDisc() == disc) {
+                countDisc++;
+            } 
+        }
+        return countDisc;
     }
 }

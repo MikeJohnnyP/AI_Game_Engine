@@ -1,5 +1,6 @@
 package chess_engine.view;
 import java.awt.Color;
+import java.awt.Font;
 
 public class Theme {
   public Color LightCol = new Color(238, 216, 192, 255);
@@ -24,4 +25,10 @@ public class Theme {
 
   public Color LightCoordCol = new Color(255, 240, 220, 255);
   public Color DarkCoordCol = new Color(140, 100, 80, 255);
+
+  public Font PlayerNameFont = new Font("Times New Romans", Font.BOLD, 25);
+  public Font PlayerNameFontChoose = new Font("Times New Romans", Font.BOLD,40);
+
+  public Color playerNotToMoveColor = Color.RED;
+  public Color playerToMoveColor = Color.GREEN;
 }
