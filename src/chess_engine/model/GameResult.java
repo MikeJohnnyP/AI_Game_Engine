@@ -35,37 +35,37 @@ public class GameResult {
     //     // if(this.discPlayerBlack == this.discPlayerWhite) re
     // } 
     
-    public int getDiscPlayerWhite() {
-        return discPlayerWhite;
-    }
+    // public int getDiscPlayerWhite() {
+    //     return discPlayerWhite;
+    // }
 
-    public void setDiscPlayerWhite(int discPlayerWhite) {
-        this.discPlayerWhite = discPlayerWhite;
-    }
+    // public void setDiscPlayerWhite(int discPlayerWhite) {
+    //     this.discPlayerWhite = discPlayerWhite;
+    // }
 
-    public int getDiscPlayerBlack() {
-        return discPlayerBlack;
-    }
+    // public int getDiscPlayerBlack() {
+    //     return discPlayerBlack;
+    // }
 
-    public void setDiscPlayerBlack(int discPlayerBlack) {
-        this.discPlayerBlack = discPlayerBlack;
-    }
+    // public void setDiscPlayerBlack(int discPlayerBlack) {
+    //     this.discPlayerBlack = discPlayerBlack;
+    // }
 
-    public int getPlayerWhiteSkipTurn() {
-        return playerWhiteSkipTurn;
-    }
+    // public int getPlayerWhiteSkipTurn() {
+    //     return playerWhiteSkipTurn;
+    // }
 
-    public void setPlayerWhiteSkipTurn(int playerWhiteSkipTurn) {
-        this.playerWhiteSkipTurn = playerWhiteSkipTurn;
-    }
+    // public void setPlayerWhiteSkipTurn(int playerWhiteSkipTurn) {
+    //     this.playerWhiteSkipTurn = playerWhiteSkipTurn;
+    // }
 
-    public int getPlayerBlackSkipTurn() {
-        return playerBlackSkipTurn;
-    }
+    // public int getPlayerBlackSkipTurn() {
+    //     return playerBlackSkipTurn;
+    // }
 
-    public void setPlayerBlackSkipTurn(int playerBlackSkipTurn) {
-        this.playerBlackSkipTurn = playerBlackSkipTurn;
-    }
+    // public void setPlayerBlackSkipTurn(int playerBlackSkipTurn) {
+    //     this.playerBlackSkipTurn = playerBlackSkipTurn;
+    // }
 
     public boolean isGameOver() {
         return isGameOver;

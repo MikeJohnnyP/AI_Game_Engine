@@ -9,5 +9,8 @@ public interface IBoard {
     void setColorToMove(Disc color);
     Disc getColorToMove();
     void switchTurnToMove();
+    boolean makeMove(int targetSquare, Disc playerDisc);
+    boolean isGameOver();
+    IBoard copyBoard();
     HashMap<Integer, Set<Integer>> getLegalMove();
 }

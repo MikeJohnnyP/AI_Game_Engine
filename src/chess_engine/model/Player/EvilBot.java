@@ -34,10 +34,10 @@ public class EvilBot implements IBot {
             } 
         }
 
-        board.getSquares()[indexOfSquare].setDisc(this.disc);
+        board.makeMove(indexOfSquare, this.disc);
         Set<Integer> capturedSquare = listLegaMove.get(indexOfSquare);
         capturedSquare.forEach((square) -> {
-            board.getSquares()[square].setDisc(this.disc);
+            board.makeMove(square, this.disc);
         });
         board.switchTurnToMove();
         System.out.println("EvilBot Change Square: " + indexOfSquare);

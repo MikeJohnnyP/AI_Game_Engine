@@ -28,10 +28,10 @@ public class HumanPlayer {
             HashMap<Integer, Set<Integer>> listLegaMove = board.getLegalMove();
             int numIndex = squareIndex.getSquareIndex(); 
             if(listLegaMove.containsKey(numIndex)) {
-                squareIndex.setDisc(this.disc);
+                board.makeMove(numIndex, this.disc);
                 Set<Integer> changeSquareColor = listLegaMove.get(numIndex);
                 changeSquareColor.forEach((square) -> {
-                    board.getSquares()[square].setDisc(this.disc);
+                    board.makeMove(square, this.disc);
                 });
                 board.switchTurnToMove();
                 System.out.println("Human change square: " + numIndex);

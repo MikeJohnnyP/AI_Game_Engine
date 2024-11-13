@@ -61,6 +61,11 @@ public class Player {
                 this.bot = new EvilBot(playerColor);
                 break;
             }
+
+            case MinimaxBot -> {
+                this.bot = new MinimaxBot(playerColor);
+                break;
+            }
             
             default -> {
             }

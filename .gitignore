@@ -1,5 +1,6 @@
 .metadata
 .vscode/
+.idea/
 bin/
 tmp/
 *.tmp

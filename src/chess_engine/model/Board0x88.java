@@ -21,13 +21,25 @@ public class Board0x88 implements IBoard {
         square[36].setDisc(Disc.BLACK);
         square[27].setDisc(Disc.BLACK);
         square[28].setDisc(Disc.WHITE);
-        this.listLegalMove = MoveGenerator.generateMove(this, colorToMove == Disc.WHITE ? true : false);
+        this.listLegalMove = MoveGenerator.generateMove(this, colorToMove);
     }
+
+    public Board0x88(IBoard board) {
+        initBoard();
+        Square[] squares = board.getSquares();
+        for(int i = 0; i < squares.length; i++) {
+            this.square[i].setDisc(squares[i].getDisc()); 
+            this.square[i].setCoord( new Coord(squares[i].getCoord()));
+        }
+
+    }
+
+    public Board0x88() {}
 
     void initBoard() {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
-                square[i * 8 + j] = new Square(Disc.NONE, new Coord(i, j));
+                this.square[i * 8 + j] = new Square(Disc.NONE, new Coord(i, j));
             }
         }
     }
@@ -56,16 +68,50 @@ public class Board0x88 implements IBoard {
     public void switchTurnToMove() {
         if (this.colorToMove == Disc.WHITE) {
             this.colorToMove = Disc.BLACK;
-            this.listLegalMove = MoveGenerator.generateMove(this, false);
+            this.listLegalMove = MoveGenerator.generateMove(this, this.colorToMove);
         } else {
             this.colorToMove = Disc.WHITE;
-            this.listLegalMove = MoveGenerator.generateMove(this, true);
+            this.listLegalMove = MoveGenerator.generateMove(this, this.colorToMove);
         }
     }
 
     @Override
     public HashMap<Integer, Set<Integer>> getLegalMove() {
         return this.listLegalMove;
+    }
+
+    @Override
+    public boolean makeMove(int targetSquare, Disc playerDisc) {
+        if (targetSquare >= square.length)
+            return false;
+        this.square[targetSquare].setDisc(playerDisc);
+        return true;
+    }
+
+    @Override
+    public boolean isGameOver() {
+        Disc opponentDisc = colorToMove == Disc.WHITE ? Disc.BLACK : Disc.WHITE;
+        int fillBoard = 0;
+        for (Square square : square) {
+            if (square.getDisc() != Disc.NONE)
+                fillBoard++;
+        }
+
+        if (fillBoard == square.length)
+            return true;
+
+        if (MoveGenerator.generateMove(this, colorToMove).size() == 0
+                && MoveGenerator.generateMove(this, opponentDisc).size() == 0) {
+            return true;
+        }
+
+        return false;
+
+    }
+
+    @Override
+    public IBoard copyBoard() {
+        return new Board0x88(this);        
     }
 
 }

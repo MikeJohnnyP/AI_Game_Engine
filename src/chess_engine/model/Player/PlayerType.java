@@ -4,4 +4,5 @@ public enum PlayerType {
     Human,
     RandomBot,
     EvilBot, 
+    MinimaxBot
 }

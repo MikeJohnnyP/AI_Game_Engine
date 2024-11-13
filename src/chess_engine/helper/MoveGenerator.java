@@ -2,7 +2,6 @@ package chess_engine.helper;
 
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
 import chess_engine.model.Disc;
@@ -12,18 +11,18 @@ import chess_engine.model.Square;
 public class MoveGenerator {
     private MoveGenerator() {}
 
-    public static HashMap<Integer, Set<Integer>> generateMove(IBoard board, boolean isWhiteToMove) {
+    public static HashMap<Integer, Set<Integer>> generateMove(IBoard board, Disc playerToGenerate) {
         HashMap<Integer, Set<Integer>> listMove = new HashMap<>();
         Square[] square = board.getSquares();
         for(int i = 0; i < square.length; i++) {
             if(square[i].getDisc() == Disc.NONE) {
-                legalMove(listMove, square, i, isWhiteToMove);
+                legalMove(listMove, square, i, playerToGenerate);
             }         
         }
         return listMove;
     }
 
-    private static void legalMove(HashMap<Integer, Set<Integer>> listMove, Square[] square, Integer indexToCheck, boolean isWhiteToMove) {
+    private static void legalMove(HashMap<Integer, Set<Integer>> listMove, Square[] square, Integer indexToCheck, Disc player) {
         Set<Integer> leftSet = new HashSet<>();
         Set<Integer> rightSet = new HashSet<>();
         Set<Integer> upSet = new HashSet<>();
@@ -32,7 +31,7 @@ public class MoveGenerator {
         Set<Integer> southeast = new HashSet<>();
         Set<Integer> northwest = new HashSet<>();
         Set<Integer> southwest = new HashSet<>(); 
-        Disc discToMove =isWhiteToMove ? Disc.WHITE : Disc.BLACK; 
+        Disc discToMove = player; 
         int[] pseudo1 = { -1, 1, 8, -8};
         int[] pseudo2 = { 9, -7, -9, 7 };
 

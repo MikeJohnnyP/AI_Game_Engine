@@ -19,7 +19,10 @@ public class RandomBot implements IBot {
         if(board.getColorToMove() != disc) return;
 
         HashMap<Integer, Set<Integer>> listLegaMove = board.getLegalMove();
-        if(listLegaMove.isEmpty()) return;
+        if(listLegaMove.isEmpty()) {
+            board.switchTurnToMove();
+            return;
+        } 
         Random r = new Random();
         int randNumber = r.nextInt(board.getSquares().length);
         while (!listLegaMove.containsKey(randNumber)) {

@@ -23,12 +23,17 @@ public class GameController {
     public GameController(IBoard board) {
         this.board = board;
         boardUI = new BoardUI(this);
-        this.playerWhite = new Player(PlayerType.EvilBot, "EvilBot",Disc.WHITE, this);
-        this.playerBlack = new Player(PlayerType.Human, "Humanity",Disc.BLACK, this);
+        this.playerWhite = new Player(PlayerType.MinimaxBot, "MinimaxBot",Disc.WHITE, this);
+        this.playerBlack = new Player(PlayerType.RandomBot, "RandomBot",Disc.BLACK, this);
         this.result = new GameResult(this.playerWhite, this.playerBlack);
     }
 
     public void update() {
+        this.playerToMove = getPlayerToMove();
+        this.playerNotToMove = getPlayerNotToMove();
+        this.playerToMove.update();
+        if(playerNotToMove.isBot()) this.playerNotToMove.update();
+
         this.playerWhite.setPlayerDisc(MoveGenerator.countDiscOfPlayer(this.playerWhite.getPlayerColor(), this.board));
         this.playerBlack.setPlayerDisc(MoveGenerator.countDiscOfPlayer(this.playerBlack.getPlayerColor(), this.board));
     }
