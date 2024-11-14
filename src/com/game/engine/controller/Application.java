@@ -157,7 +157,7 @@ public class Application {
 					layer.onUpdate(ts);
 				}
 				ts.setDeltaTime(ts.getDeltaTime() - MAX_DELTA_TIME);
-				EngineLogger.Get().info("CatchUp Fps: " + ts);
+				// EngineLogger.Get().info("CatchUp Fps: " + ts);
 				canvas.onRender();
 				
 			}

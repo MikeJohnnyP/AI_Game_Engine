@@ -30,14 +30,14 @@ public class MinimaxBot implements IBot {
         
         for(Map.Entry<Integer, Set<Integer>> entry : listLegaMove.entrySet()) {
             IBoard newBoard = board.copyBoard();
-            float moveScore = minimax(newBoard,3, false, this.disc);
+            float moveScore = minimax(newBoard, 4, false, this.disc);
             if(moveScore > bestScore) {
                 bestScore =moveScore;
                 indexTomove = entry.getKey();
             }
         }
 
-        System.out.println("EvilBot Change Square: " + indexTomove);
+        System.out.println("MinimaxBot Change Square: " + indexTomove);
         
         board.makeMove(indexTomove, this.disc);
         Set<Integer> capturedSquare = listLegaMove.get(indexTomove);
@@ -59,6 +59,9 @@ public class MinimaxBot implements IBot {
             for (Map.Entry<Integer, Set<Integer>> entry : MoveGenerator.generateMove(board, player).entrySet()) {
                 IBoard newBoard = board.copyBoard();
                 newBoard.makeMove(entry.getKey(), player);
+                for(int flipDisc : entry.getValue()) {
+                    newBoard.makeMove(flipDisc, player);
+                }
                 float eval = minimax(board, depth - 1, false, oppenentDisc);
                 maxEval = Math.max(eval, maxEval);
             }
@@ -69,6 +72,9 @@ public class MinimaxBot implements IBot {
             for (Map.Entry<Integer, Set<Integer>> entry : MoveGenerator.generateMove(board, oppenentDisc).entrySet()) {
                 IBoard newBoard = board.copyBoard();
                 newBoard.makeMove(entry.getKey(), oppenentDisc);
+                for(int flipDisc : entry.getValue()) {
+                    newBoard.makeMove(flipDisc, oppenentDisc);
+                }
                 float eval = minimax(board, depth - 1, true, player);
                 minEval = Math.max(eval, minEval);
             }

@@ -33,6 +33,7 @@ public class RandomBot implements IBot {
         capturedSquare.forEach((square) -> {
             board.getSquares()[square].setDisc(this.disc);
         });
+        System.out.println("RandomBot Change Square: " + randNumber);
         board.switchTurnToMove();
                  
     }
