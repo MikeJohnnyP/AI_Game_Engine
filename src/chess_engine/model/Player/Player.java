@@ -66,6 +66,11 @@ public class Player {
                 this.bot = new MinimaxBot(playerColor);
                 break;
             }
+
+            case AlphaBetaBot -> {
+                this.bot = new AlphaBetaBot(playerColor);
+                break;
+            }
             
             default -> {
             }

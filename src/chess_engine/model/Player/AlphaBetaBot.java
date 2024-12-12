@@ -9,10 +9,10 @@ import chess_engine.helper.MoveGenerator;
 import chess_engine.model.Disc;
 import chess_engine.model.IBoard;
 
-public class MinimaxBot implements IBot {
-    private Disc disc;
+public class AlphaBetaBot implements IBot{
+       private Disc disc;
 
-    public MinimaxBot(Disc disc) {
+    public AlphaBetaBot(Disc disc) {
         this.disc = disc;
     }
 
@@ -31,7 +31,7 @@ public class MinimaxBot implements IBot {
         
         for(Map.Entry<Integer, Set<Integer>> entry : listLegaMove.entrySet()) {
             IBoard newBoard = board.copyBoard();
-            float moveScore = minimax(newBoard, 3, false, this.disc);
+            float moveScore = minimax(newBoard, 5, Float.MIN_VALUE, Float.MAX_VALUE,  false, this.disc);
             if(moveScore >= bestScore) {
                 bestScore = moveScore;
                 indexTomove = entry.getKey();
@@ -54,7 +54,7 @@ public class MinimaxBot implements IBot {
         System.out.println("MinimaxBot Change Square: " + indexTomove + ", best score: " + bestScore);
     }
 
-    float minimax(IBoard board, int depth, boolean maximizingPlayer, Disc player) {
+    float minimax(IBoard board, int depth, float alpha, float beta, boolean maximizingPlayer, Disc player) {
         Disc oppenentDisc = player == Disc.WHITE ? Disc.BLACK : Disc.WHITE;
         if (depth == 0 || board.isGameOver()) {
             HeuristicHelper heuristic = new HeuristicHelper();
@@ -69,8 +69,12 @@ public class MinimaxBot implements IBot {
                 for(int flipDisc : entry.getValue()) {
                     newBoard.makeMove(flipDisc, player);
                 }
-                float eval = minimax(board, depth - 1, false, oppenentDisc);
+                float eval = minimax(board, depth - 1, alpha, beta, false, oppenentDisc);
                 maxEval = Math.max(eval, maxEval);
+                alpha = Math.max(alpha, eval);
+                if(beta <= alpha) {
+                    break;
+                }
             }
             return maxEval;
 
@@ -82,11 +86,16 @@ public class MinimaxBot implements IBot {
                 for(int flipDisc : entry.getValue()) {
                     newBoard.makeMove(flipDisc, player);
                 }
-                float eval = minimax(board, depth - 1, true, oppenentDisc);
+                float eval = minimax(board, depth - 1, alpha, beta, true, oppenentDisc);
                 minEval = Math.min(eval, minEval);
+                beta = Math.min(beta, eval);
+                if(beta <= alpha) {
+                    break;
+                }
             }
             return minEval;
         }
     }
 
+ 
 }
