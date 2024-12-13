@@ -6,11 +6,13 @@ tmp/
 *.tmp
 *.bak
 *.swp
+*.iml
 *~.nib
 local.properties
 .settings/
 .loadpath
 .recommenders
+classes
 
 # External tool builders
 .externalToolBuilders/

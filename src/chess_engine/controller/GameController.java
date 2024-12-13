@@ -1,5 +1,6 @@
 package chess_engine.controller;
 
+import chess_engine.model.Board0x88;
 import com.game.event.MouseMovedEvent;
 import com.game.event.MousePressedEvent;
 
@@ -23,7 +24,7 @@ public class GameController {
     public GameController(IBoard board) {
         this.board = board;
         boardUI = new BoardUI(this);
-        this.playerWhite = new Player(PlayerType.AlphaBetaBot, "AlphaBetaBot",Disc.WHITE, this);
+        this.playerWhite = new Player(PlayerType.MinimaxBot, "MinimaxBot",Disc.WHITE, this);
         this.playerBlack = new Player(PlayerType.RandomBot, "RandomBot",Disc.BLACK, this);
         this.result = new GameResult(this.playerWhite, this.playerBlack);
     }
@@ -37,7 +38,19 @@ public class GameController {
     
             this.playerWhite.setPlayerDisc(MoveGenerator.countDiscOfPlayer(this.playerWhite.getPlayerColor(), this.board));
             this.playerBlack.setPlayerDisc(MoveGenerator.countDiscOfPlayer(this.playerBlack.getPlayerColor(), this.board));
+        } else {
+            try {
+                Thread.sleep(500);
+                startNewGame();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
+    }
+
+    public void startNewGame() {
+        result.overGame();
+        board = new Board0x88(Disc.BLACK);
     }
 
     public void draw() {
@@ -46,6 +59,7 @@ public class GameController {
         boardUI.drawLegalMove();
         boardUI.drawHover();
         boardUI.drawPlayerInfo();
+        boardUI.drawMatchesInfor(result);
     }
 
     public void MouseMovedEvent(MouseMovedEvent e) {
@@ -53,10 +67,10 @@ public class GameController {
     }
 
     public void MousePressedEvent(MousePressedEvent e) {
-        this.playerToMove = getPlayerToMove();
-        this.playerNotToMove = getPlayerNotToMove();
-        this.playerToMove.update();
-        if(playerNotToMove.isBot()) this.playerNotToMove.update();
+//        this.playerToMove = getPlayerToMove();
+//        this.playerNotToMove = getPlayerNotToMove();
+//        this.playerToMove.update();
+//        if(playerNotToMove.isBot()) this.playerNotToMove.update();
     }
 
     public IBoard getBoard() {
@@ -68,12 +82,12 @@ public class GameController {
     }
 
     Player getPlayerToMove() {
-        boolean isWhiteMove = board.getColorToMove() == Disc.WHITE ? true : false;
+        boolean isWhiteMove = board.getColorToMove() == Disc.WHITE;
         return isWhiteMove ? playerWhite : playerBlack;
     }
 
     Player getPlayerNotToMove() {
-        boolean isWhiteMove = board.getColorToMove() == Disc.WHITE ? true : false;
+        boolean isWhiteMove = board.getColorToMove() == Disc.WHITE;
         return isWhiteMove ? playerBlack : playerWhite;
     }
 

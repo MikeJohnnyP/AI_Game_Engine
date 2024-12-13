@@ -13,7 +13,6 @@ import chess_engine.model.Disc;
 
 public class ChessLayer extends Layer {
 
-    String fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
     GameController gControl ;
 
     public ChessLayer(String name, LayerType type) {
@@ -22,7 +21,7 @@ public class ChessLayer extends Layer {
 
     @Override
     public void onAttach() {
-        gControl = new GameController(new Board0x88(fen, Disc.BLACK));        
+        gControl = new GameController(new Board0x88(Disc.BLACK));
 		Application.Get().getDispatcher().addEventListener(MousePressedEvent.class, this::onMousePressedEvent);
 		Application.Get().getDispatcher().addEventListener(KeyPressedEvent.class, this::onKeyPressedEvent);
 		Application.Get().getDispatcher().addEventListener(MouseMovedEvent.class, this::onMouseMovedEvent);

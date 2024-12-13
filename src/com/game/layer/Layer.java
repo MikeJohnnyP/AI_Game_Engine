@@ -24,7 +24,7 @@ public abstract class Layer {
 	public abstract void onAttach();
 	public abstract void onDettach();
 	
-	public abstract void onUpdate(TimeSteps ts);
+	public abstract void onUpdate(TimeSteps ts) throws InterruptedException;
 	public abstract void onRender();
 	
 	protected boolean onKeyPressedEvent(KeyPressedEvent e) {return false;}

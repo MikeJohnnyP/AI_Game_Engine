@@ -23,9 +23,13 @@ public class HumanPlayer {
         if(board.getColorToMove() != disc) return;
         Vector2 mouseCurrentPos = new Vector2(Mouse.getPosX(), Mouse.getPosY()); 
         Square squareIndex = null;
-
+        HashMap<Integer, Set<Integer>> listLegaMove = board.getLegalMove();
+        if(listLegaMove.isEmpty()) {
+            board.switchTurnToMove();
+            System.out.println("Human switch turn");
+            return;
+        }
         if((squareIndex = boardUI.tryToGetSquareAtPoint(mouseCurrentPos)) != null) {
-            HashMap<Integer, Set<Integer>> listLegaMove = board.getLegalMove();
             int numIndex = squareIndex.getSquareIndex(); 
             if(listLegaMove.containsKey(numIndex)) {
                 board.makeMove(numIndex, this.disc);

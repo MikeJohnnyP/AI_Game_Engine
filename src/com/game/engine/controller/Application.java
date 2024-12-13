@@ -154,8 +154,12 @@ public class Application {
 				frameData.IsCatchUpPhase = true;
 
 				for (Layer layer : layerStack.Get()) {
-					layer.onUpdate(ts);
-				}
+                    try {
+                        layer.onUpdate(ts);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
 				ts.setDeltaTime(ts.getDeltaTime() - MAX_DELTA_TIME);
 				// EngineLogger.Get().info("CatchUp Fps: " + ts);
 				canvas.onRender();
@@ -164,8 +168,12 @@ public class Application {
 			frameData.IsCatchUpPhase = false;
 
 			for (Layer layer : layerStack.Get()) {
-				layer.onUpdate(ts);
-			}
+                try {
+                    layer.onUpdate(ts);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
 			
 			// if(accumulator >= 3) {
 			// 	accumulator = FIXED_TIME_STEP;

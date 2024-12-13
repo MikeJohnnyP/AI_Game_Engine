@@ -7,6 +7,7 @@ import java.util.Set;
 import java.util.HashMap;
 import java.util.Map;
 
+import chess_engine.model.GameResult;
 import com.game.engine.controller.Application;
 import com.game.engine.model.WindowSpec;
 import com.game.event.KeyPressedEvent;
@@ -267,6 +268,23 @@ public class BoardUI {
     public void mouseMoved(MouseMovedEvent e) {
         worldPos.x = (float) e.getxPosition();
         worldPos.y = (float) e.getyPosition();
+    }
+
+    public void drawMatchesInfor(GameResult gameResult) {
+        String playerWhiteName = gameResult.getPlayerWhite().getPlayerName();
+        int playerWhiteDisc = gameResult.getPlayerWhite().getPlayerDisc();
+        String playerBlackName = gameResult.getPlayerBlack().getPlayerName();
+        int playBlackDisc = gameResult.getPlayerBlack().getPlayerDisc();
+
+        Font font = theme.PlayerNameFont;
+
+        Color whiteColor =  theme.playerToMoveColor;
+        Color blackColor = theme.playerNotToMoveColor;
+
+        Renderer2D.drawString(playerBlackName + ": " + gameResult.getPlayerBlackState().winMatches + " " + gameResult.getPlayerBlackState().looseMatches + " " + gameResult.getPlayerBlackState().drawMatches, 755, 50, font, blackColor);
+        Renderer2D.drawString(playerWhiteName + ": " + gameResult.getPlayerWhiteState().winMatches + " " + gameResult.getPlayerWhiteState().looseMatches + " " + gameResult.getPlayerWhiteState().drawMatches, 755, 90, font, whiteColor);
+        Renderer2D.drawString("Matches: " + GameResult.countMatches, 755, 130, font, whiteColor);
+
     }
 
     public void keyPressed(KeyPressedEvent e) {

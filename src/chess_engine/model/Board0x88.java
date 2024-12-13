@@ -7,13 +7,11 @@ import chess_engine.chess.Coord;
 import chess_engine.helper.MoveGenerator;
 
 public class Board0x88 implements IBoard {
-    private String fen;
     private Square[] squares = new Square[64]; // Biểu diễn bàn cờ
     private HashMap<Integer, Set<Integer>> listLegalMove = null;
     private Disc colorToMove;
 
-    public Board0x88(String fen, Disc colorToMove) {
-        this.fen = fen;
+    public Board0x88(Disc colorToMove) {
         this.colorToMove = colorToMove;
         initBoard();
         // this.square = FenUltility.loadPositionFromPen(this.fen);
@@ -49,10 +47,6 @@ public class Board0x88 implements IBoard {
         return this.squares;
     }
 
-    @Override
-    public String getFen() {
-        return fen;
-    }
 
     @Override
     public void setColorToMove(Disc color) {
@@ -100,12 +94,8 @@ public class Board0x88 implements IBoard {
         if (fillBoard == this.squares.length)
             return true;
 
-        if (MoveGenerator.generateMove(this, colorToMove).size() == 0
-                && MoveGenerator.generateMove(this, opponentDisc).size() == 0) {
-            return true;
-        }
-
-        return false;
+        return MoveGenerator.generateMove(this, colorToMove).isEmpty()
+                && MoveGenerator.generateMove(this, opponentDisc).isEmpty();
 
     }
 

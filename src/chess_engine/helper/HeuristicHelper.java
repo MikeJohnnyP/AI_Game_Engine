@@ -10,13 +10,11 @@ import chess_engine.model.Square;
 public class HeuristicHelper {
     private static float WEIGHT_BOARD_VALUE = 0.5f;
     private static float MOBILITY_VALUE = 0.3f;
-    private static float PIECE_STABILITY_VALUE = 0.2f;
+    private static float EDGE_STABILITY_VALUE = 0.2f;
+    private static float FRONTIER_DISC_VALUE = 0.2f;
+    private static float CORNER_CONTROL_VALUE = 0.2f;
+    private static float PARITY_VALUE = 0.1f;
 
-    private static final int SIZE = 8; // Kích thước bàn cờ (8x8)
-    private static final int[] DIRECTIONS = {-1, 1, -8, 8, -9, 9, -7, 7}; // Các hướng di chuyển
-    private static final int EMPTY = 0;
-
-    // Các trọng số cho từng giai đoạn
     private static final int[] EARLY_GAME_WEIGHTS = {
         100, -20, 10,  5,  5, 10, -20, 100,
         -20, -50, -2, -2, -2, -2, -50, -20,
@@ -53,16 +51,14 @@ public class HeuristicHelper {
     public float evaluate(IBoard board, Disc playerDisc) {
         Disc oppenentPlayer = playerDisc == Disc.WHITE ? Disc.BLACK : Disc.WHITE;
         Square[] squares = board.getSquares();
-        int score = 0;
+          //1. Corner Control
+         int[] corners = { 0, 7, 56, 63 };
+         int corner_score = 0;
 
-        // // 1. Corner Control
-        // int[] corners = { 0, 7, 56, 63 };
-        // int corner_score = 25;
-
-        // for(int corner : corners) {
-        //     if(board.getSquares()[corner].getDisc() == playerDisc) score += corner_score;
-        //     else if (board.getSquares()[corner].getDisc() == oppenentPlayer) score -= corner_score;
-        // }
+         for(int corner : corners) {
+             if(board.getSquares()[corner].getDisc() == playerDisc) corner_score += 70;
+             else if (board.getSquares()[corner].getDisc() == oppenentPlayer) corner_score -= 70;
+         }
 
         // 2. Mobility
         HashMap<Integer, Set<Integer>> player_moves = MoveGenerator.generateMove(board, playerDisc);
@@ -79,10 +75,17 @@ public class HeuristicHelper {
             else if(squares[i].getDisc() == oppenentPlayer) weightScore -= currentWeightBoard[i];
         }
 
-        // Piece Stability
-        int stabilityScore = calculateStability(squares, playerDisc); 
+        int edgeStability = calculateEdgeStability(squares, playerDisc);
+        int frontierDiscs = calculateFrontierDiscs(squares, playerDisc);
 
-        return (weightScore * 1) + (mobilityScore * 1) + (stabilityScore * 1);
+        // Parity
+        float parityScore = evaluateParity(board, playerDisc) * 100;
+
+        return (weightScore * WEIGHT_BOARD_VALUE) +
+                (mobilityScore * MOBILITY_VALUE) +
+                ((edgeStability * EDGE_STABILITY_VALUE) - (frontierDiscs * FRONTIER_DISC_VALUE)) +
+                (parityScore * PARITY_VALUE) +
+                (corner_score * CORNER_CONTROL_VALUE);
     }
 
     private int[] getWeightBoard(IBoard board) {
@@ -94,71 +97,122 @@ public class HeuristicHelper {
         }
 
         if (squareEmpty > 40){
-            WEIGHT_BOARD_VALUE = 0.5f;
-            PIECE_STABILITY_VALUE = 0.2f;
-            MOBILITY_VALUE = 0.3f;
+            MOBILITY_VALUE = 0.5f;
+            WEIGHT_BOARD_VALUE = 0.4f;
+            FRONTIER_DISC_VALUE = 0.2f;
+            EDGE_STABILITY_VALUE = 0.1f;
+            CORNER_CONTROL_VALUE = 0.1f;
+            PARITY_VALUE = 0.0f;
             return EARLY_GAME_WEIGHTS;
         } 
         else if(squareEmpty > 15){
-            WEIGHT_BOARD_VALUE = 0.3f;
-            PIECE_STABILITY_VALUE = 0.3f;
             MOBILITY_VALUE = 0.4f;
+            WEIGHT_BOARD_VALUE = 0.3f;
+            FRONTIER_DISC_VALUE = 0.3f;
+            EDGE_STABILITY_VALUE = 0.3f;
+            CORNER_CONTROL_VALUE = 0.2f;
+            PARITY_VALUE = 0.1f;
             return MID_GAME_WEIGHTS;
         }
         else {
-            WEIGHT_BOARD_VALUE = 0.1f;
-            PIECE_STABILITY_VALUE = 0.5f;
-            MOBILITY_VALUE = 0.4f;
+            MOBILITY_VALUE = 0.1f;
+            WEIGHT_BOARD_VALUE = 0.2f;
+            FRONTIER_DISC_VALUE = 0.1f;
+            EDGE_STABILITY_VALUE = 0.4f;
+            CORNER_CONTROL_VALUE = 0.4f;
+            PARITY_VALUE = 0.2f;
             return LATE_GAME_WEIGHTS;
         }
 
     }
 
-    public static int calculateStability(Square[] squares, Disc player) {
-        int stableCount = 0;
+    public static int calculateEdgeStability(Square[] squares, Disc playerDisc) {
+        int edgeStability = 0;
+
+
+        int[] corners = {0, 7, 56, 63}; // Góc của bàn cờ 8x8
+        int[] edges = {1, 2, 3, 4, 5, 6, 8, 16, 24, 32, 40, 48, 57, 58, 59, 60, 61, 62};
+
+
+        for (int pos : corners) {
+            if (squares[pos].getDisc() == playerDisc) {
+                edgeStability += 5; // Góc có giá trị cao
+            }
+        }
+
+
+        for (int pos : edges) {
+            if (squares[pos].getDisc() == playerDisc) {
+
+                if (isEdgeStable(squares, pos, playerDisc)) {
+                    edgeStability += 2;
+                }
+            }
+        }
+
+        return edgeStability;
+    }
+
+
+    private static boolean isEdgeStable(Square[] squares, int pos, Disc playerDisc) {
+        int row = pos / 8;
+        int col = pos % 8;
+
+
+        if (row == 0 || row == 7 || col == 0 || col == 7) {
+            return isStableInDirection(squares, pos, playerDisc, -1) &&
+                    isStableInDirection(squares, pos, playerDisc, 1);
+        }
+        return false;
+    }
+
+
+    private static boolean isStableInDirection(Square[] squares, int pos, Disc playerDisc, int step) {
+        int next = pos + step;
+        while (next >= 0 && next < squares.length) {
+            if (squares[next].getDisc() != playerDisc) {
+                return false; // Không ổn định nếu gặp quân khác màu
+            }
+            next += step;
+        }
+        return true;
+    }
+
+    public static int calculateFrontierDiscs(Square[] squares, Disc playerDisc) {
+        int frontierDiscs = 0;
+
 
         for (int i = 0; i < squares.length; i++) {
-            if (squares[i].getDisc() == player && isStable(squares, i, player)) {
-                stableCount++;
+            if (squares[i].getDisc() == playerDisc && isFrontierDisc(squares, i)) {
+                frontierDiscs++;
             }
         }
 
-        return stableCount;
+        return frontierDiscs;
     }
 
-    // Kiểm tra tính ổn định của quân cờ tại vị trí index
-    public static boolean isStable(Square[] board, int index, Disc player) {
-        int row = index / SIZE;
-        int col = index % SIZE;
 
-        // Quân cờ ở góc luôn ổn định
-        if ((row == 0 && col == 0) || (row == 0 && col == SIZE - 1) || 
-            (row == SIZE - 1 && col == 0) || (row == SIZE - 1 && col == SIZE - 1)) {
-            return true;
-        }
-
-        // Duyệt qua các hướng để kiểm tra tính ổn định
-        for (int direction : DIRECTIONS) {
-            int neighbor = index + direction;
-            if (isValidNeighbor(index, neighbor) && board[neighbor].getDisc() != player) {
-                return false; // Không ổn định nếu có quân đối phương hoặc ô trống lân cận
+    private static boolean isFrontierDisc(Square[] squares, int pos) {
+        int[] directions = {-1, 1, -8, 8, -9, -7, 7, 9};
+        for (int dir : directions) {
+            int neighbor = pos + dir;
+            if (neighbor >= 0 && neighbor < squares.length && squares[neighbor].getDisc() == Disc.NONE) {
+                return true;
             }
         }
-
-        return true; // Ổn định nếu tất cả các hướng đều ổn định
+        return false;
     }
 
-    // Kiểm tra vị trí hợp lệ trên bàn cờ
-    private static boolean isValidNeighbor(int current, int neighbor) {
-        int currentRow = current / SIZE;
-        int currentCol = current % SIZE;
-        int neighborRow = neighbor / SIZE;
-        int neighborCol = neighbor % SIZE;
+    public static float evaluateParity(IBoard board, Disc playerDisc) {
+        int emptySquares = 0;
+        Square[] squares = board.getSquares();
+        for (Square square : squares) {
+            if (square.getDisc() == Disc.NONE) {
+                emptySquares++;
+            }
+        }
+        boolean isEven = (emptySquares % 2 == 0);
 
-        // Kiểm tra nếu hàng hoặc cột nằm ngoài phạm vi
-        return neighborRow >= 0 && neighborRow < SIZE && 
-            neighborCol >= 0 && neighborCol < SIZE &&
-            Math.abs(currentRow - neighborRow) <= 1 &&
-            Math.abs(currentCol - neighborCol) <= 1;
+        return isEven ? 1.0f : -1.0f;
     }
 }
