@@ -8,12 +8,15 @@ import chess_engine.helper.HeuristicHelper;
 import chess_engine.helper.MoveGenerator;
 import chess_engine.model.Disc;
 import chess_engine.model.IBoard;
+import com.game.profiller.PerformanceLogger;
 
 public class MinimaxBot implements IBot {
     private Disc disc;
+    PerformanceLogger logger;
 
     public MinimaxBot(Disc disc) {
         this.disc = disc;
+        this.logger = new PerformanceLogger("MinimaxBot.txt");
     }
 
     @Override
@@ -29,18 +32,22 @@ public class MinimaxBot implements IBot {
             return;
         }
 
+        logger.initTime();
         for(Map.Entry<Integer, Set<Integer>> entry : listLegaMove.entrySet()) {
             IBoard newBoard = board.copyBoard();
             newBoard.makeMove(entry.getKey(), this.disc);
             for(int flipDisc : entry.getValue()) {
                 newBoard.makeMove(flipDisc, this.disc);
             }
-            float moveScore = minimax(newBoard, 3, !(this.disc == Disc.WHITE), this.disc == Disc.WHITE ? oppenentDisc : this.disc);
+            float moveScore = minimax(newBoard, 5, !(this.disc == Disc.WHITE), this.disc == Disc.WHITE ? oppenentDisc : this.disc);
             if(moveScore > bestScore) {
                 bestScore = moveScore;
                 indexTomove = entry.getKey();
             }
         }
+
+        logger.endTime();
+        logger.logPerformance("Minimax");
 
         
         Set<Integer> capturedSquare = listLegaMove.get(indexTomove);

@@ -24,7 +24,8 @@ public class GameController {
     public GameController(IBoard board) {
         this.board = board;
         boardUI = new BoardUI(this);
-        this.playerWhite = new Player(PlayerType.MinimaxBot, "MinimaxBot",Disc.WHITE, this);
+        this.playerWhite = new Player(PlayerType.MinimaxBot, "Minimax",Disc.WHITE, this);
+        //this.playerWhite = new Player(PlayerType.AlphaBetaBot, "AlphaBetaBot",Disc.WHITE, this);
         this.playerBlack = new Player(PlayerType.RandomBot, "RandomBot",Disc.BLACK, this);
         this.result = new GameResult(this.playerWhite, this.playerBlack);
     }

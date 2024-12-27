@@ -1,0 +1,672 @@
+Dec 26, 2024 9:40:19 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.006896 seconds | Memory: 1.26 MB
+Dec 26, 2024 9:40:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004274 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000606 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002979 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.006078 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002563 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.009967 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.007592 seconds | Memory: 8.50 MB
+Dec 26, 2024 9:40:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.009529 seconds | Memory: 10.00 MB
+Dec 26, 2024 9:40:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.008878 seconds | Memory: 11.00 MB
+Dec 26, 2024 9:40:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.010475 seconds | Memory: 10.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.008513 seconds | Memory: 10.00 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.008751 seconds | Memory: 9.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.008811 seconds | Memory: 10.00 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.006228 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003865 seconds | Memory: 5.00 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003333 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.005552 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003126 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001836 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003969 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001484 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001372 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000971 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000607 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000602 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000280 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000191 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000117 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000042 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000517 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000966 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000433 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001586 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001202 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002482 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003581 seconds | Memory: 8.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004262 seconds | Memory: 10.00 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.007498 seconds | Memory: 15.00 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003738 seconds | Memory: 9.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003635 seconds | Memory: 8.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003543 seconds | Memory: 9.00 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002701 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004722 seconds | Memory: 9.00 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002312 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002383 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001768 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001247 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001974 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002878 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001797 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001385 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000922 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000824 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000486 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000420 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000238 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000168 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000311 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000157 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000591 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000892 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001281 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001376 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001674 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002154 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002792 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003844 seconds | Memory: 9.00 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003594 seconds | Memory: 10.50 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003843 seconds | Memory: 9.00 MB
+Dec 26, 2024 9:40:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004093 seconds | Memory: 9.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003251 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002839 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002891 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003049 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002390 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002144 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001580 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001396 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000993 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000849 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000866 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000607 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001043 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000461 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000337 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000278 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000162 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000099 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000034 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000392 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000606 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001723 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002881 seconds | Memory: 9.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001815 seconds | Memory: 8.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003508 seconds | Memory: 10.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004424 seconds | Memory: 12.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004618 seconds | Memory: 11.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004952 seconds | Memory: 11.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004262 seconds | Memory: 12.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003915 seconds | Memory: 12.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003777 seconds | Memory: 10.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002186 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004165 seconds | Memory: 9.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001919 seconds | Memory: 8.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001552 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001827 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002295 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002451 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001944 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001877 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002106 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000955 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000578 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000363 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000604 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000241 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000140 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000079 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000021 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000468 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000593 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001046 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000949 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001575 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001429 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001544 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002382 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001207 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002545 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002491 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001802 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001388 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002275 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001578 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001492 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001175 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001331 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000932 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001295 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001170 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000729 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000851 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000840 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000208 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000124 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000079 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000062 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000045 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000018 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000239 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000366 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000745 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000681 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001582 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001981 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002541 seconds | Memory: 8.00 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002523 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003189 seconds | Memory: 9.00 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002211 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002867 seconds | Memory: 8.00 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001167 seconds | Memory: 5.00 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000756 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000762 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000915 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000675 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001009 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000923 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000698 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000557 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000653 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000489 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000377 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000281 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000420 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000481 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000293 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000285 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000336 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000250 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000143 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000104 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000082 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000048 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000013 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000468 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000432 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000953 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001527 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002394 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001956 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001243 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001232 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001818 seconds | Memory: 8.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002097 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001253 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000920 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001549 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000779 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000739 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001643 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000992 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001551 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000755 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000819 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000585 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000625 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000354 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000403 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000594 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000241 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000187 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000121 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000112 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000105 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000025 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000226 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000364 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000789 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000817 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001769 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002287 seconds | Memory: 9.00 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003179 seconds | Memory: 11.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003737 seconds | Memory: 16.00 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003494 seconds | Memory: 15.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003823 seconds | Memory: 10.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003725 seconds | Memory: 10.00 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002972 seconds | Memory: 8.00 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003404 seconds | Memory: 8.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003588 seconds | Memory: 9.00 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002777 seconds | Memory: 8.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002101 seconds | Memory: 5.00 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001427 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000970 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000761 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000525 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000472 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000412 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000734 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000300 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000196 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000132 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000101 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000069 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000033 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000024 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000324 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000429 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000641 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001436 seconds | Memory: 5.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000884 seconds | Memory: 5.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001584 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001702 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003154 seconds | Memory: 11.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003568 seconds | Memory: 10.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001949 seconds | Memory: 8.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002533 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003147 seconds | Memory: 8.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002576 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002521 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001287 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001456 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001723 seconds | Memory: 5.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001014 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001000 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000736 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000511 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000478 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000757 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000309 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000387 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000551 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000170 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000086 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000032 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000217 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000459 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000514 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000939 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000934 seconds | Memory: 5.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001440 seconds | Memory: 8.00 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001634 seconds | Memory: 9.00 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001723 seconds | Memory: 8.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002018 seconds | Memory: 10.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004995 seconds | Memory: 12.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.004527 seconds | Memory: 13.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003928 seconds | Memory: 11.00 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003100 seconds | Memory: 9.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001660 seconds | Memory: 7.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002615 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001941 seconds | Memory: 5.00 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001553 seconds | Memory: 4.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000797 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001106 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000782 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000986 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001256 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000828 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000617 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000831 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000383 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000408 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000291 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000090 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000029 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000214 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000348 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001291 seconds | Memory: 5.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001488 seconds | Memory: 8.50 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001231 seconds | Memory: 7.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001459 seconds | Memory: 8.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003250 seconds | Memory: 10.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002897 seconds | Memory: 10.50 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001414 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002325 seconds | Memory: 10.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002445 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001703 seconds | Memory: 6.50 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.003417 seconds | Memory: 8.50 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.002354 seconds | Memory: 6.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001687 seconds | Memory: 5.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001413 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000903 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000668 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000923 seconds | Memory: 4.00 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.001059 seconds | Memory: 3.50 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000702 seconds | Memory: 3.00 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000624 seconds | Memory: 2.50 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000848 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000434 seconds | Memory: 2.00 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000553 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000321 seconds | Memory: 1.50 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000388 seconds | Memory: 1.00 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000156 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000175 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000058 seconds | Memory: 0.50 MB
+Dec 26, 2024 9:40:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: Minimax | Time: 0.000028 seconds | Memory: 0.50 MB

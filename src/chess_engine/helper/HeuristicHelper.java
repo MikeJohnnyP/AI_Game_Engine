@@ -79,7 +79,7 @@ public class HeuristicHelper {
         int frontierDiscs = calculateFrontierDiscs(squares, playerDisc);
 
         // Parity
-        float parityScore = evaluateParity(board, playerDisc) * 100;
+        float parityScore = evaluateParity(board) * 100;
 
         return (weightScore * WEIGHT_BOARD_VALUE) +
                 (mobilityScore * MOBILITY_VALUE) +
@@ -136,7 +136,7 @@ public class HeuristicHelper {
 
         for (int pos : corners) {
             if (squares[pos].getDisc() == playerDisc) {
-                edgeStability += 5; // Góc có giá trị cao
+                edgeStability += 5;
             }
         }
 
@@ -171,7 +171,7 @@ public class HeuristicHelper {
         int next = pos + step;
         while (next >= 0 && next < squares.length) {
             if (squares[next].getDisc() != playerDisc) {
-                return false; // Không ổn định nếu gặp quân khác màu
+                return false;
             }
             next += step;
         }
@@ -203,7 +203,7 @@ public class HeuristicHelper {
         return false;
     }
 
-    public static float evaluateParity(IBoard board, Disc playerDisc) {
+    public static float evaluateParity(IBoard board) {
         int emptySquares = 0;
         Square[] squares = board.getSquares();
         for (Square square : squares) {

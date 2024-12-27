@@ -8,12 +8,15 @@ import chess_engine.helper.HeuristicHelper;
 import chess_engine.helper.MoveGenerator;
 import chess_engine.model.Disc;
 import chess_engine.model.IBoard;
+import com.game.profiller.PerformanceLogger;
 
 public class AlphaBetaBot implements IBot{
     private Disc disc;
+    private PerformanceLogger performanceLogger;
 
     public AlphaBetaBot(Disc disc) {
         this.disc = disc;
+        this.performanceLogger = new PerformanceLogger("AlphaBetaBot.txt");
     }
 
     @Override
@@ -28,19 +31,23 @@ public class AlphaBetaBot implements IBot{
             System.out.println("Minimax Bot switch turn");
             return;
         }
-        
+
+        performanceLogger.initTime();
         for(Map.Entry<Integer, Set<Integer>> entry : listLegaMove.entrySet()) {
             IBoard newBoard = board.copyBoard();
             newBoard.makeMove(entry.getKey(), this.disc);
             for(int flipDisc : entry.getValue()) {
                 newBoard.makeMove(flipDisc, this.disc);
             }
-            float moveScore = minimax(newBoard, 3, -Float.MAX_VALUE, Float.MAX_VALUE, !(this.disc == Disc.WHITE), this.disc == Disc.WHITE ? oppenentDisc : this.disc);
+            float moveScore = minimax(newBoard, 5, -Float.MAX_VALUE, Float.MAX_VALUE, !(this.disc == Disc.WHITE), this.disc == Disc.WHITE ? oppenentDisc : this.disc);
             if(moveScore > bestScore) {
                 bestScore = moveScore;
                 indexTomove = entry.getKey();
             }
         }
+
+        performanceLogger.endTime();
+        performanceLogger.logPerformance("AlphaBeta");
 
         
         Set<Integer> capturedSquare = listLegaMove.get(indexTomove);
@@ -52,7 +59,7 @@ public class AlphaBetaBot implements IBot{
         System.out.println("MinimaxBot Change Square: " + indexTomove + ", best score: " + bestScore);
     }
 
-    float minimax(IBoard board, int depth, float alpha, float beta, boolean maximizingPlayer, Disc player) {
+    static float minimax(IBoard board, int depth, float alpha, float beta, boolean maximizingPlayer, Disc player) {
         Disc oppenentDisc = player == Disc.WHITE ? Disc.BLACK : Disc.WHITE;
         if (depth == 0 || board.isGameOver()) {
             HeuristicHelper heuristic = new HeuristicHelper();

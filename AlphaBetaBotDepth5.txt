@@ -1,0 +1,690 @@
+Dec 26, 2024 10:35:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.307130 seconds | Memory: 30.50 MB
+Dec 26, 2024 10:35:42 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.357929 seconds | Memory: 37.03 MB
+Dec 26, 2024 10:35:42 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.368923 seconds | Memory: 26.03 MB
+Dec 26, 2024 10:35:43 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.462597 seconds | Memory: 21.54 MB
+Dec 26, 2024 10:35:44 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.579476 seconds | Memory: 153.05 MB
+Dec 26, 2024 10:35:44 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.569041 seconds | Memory: 97.04 MB
+Dec 26, 2024 10:35:45 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.429452 seconds | Memory: 76.54 MB
+Dec 26, 2024 10:35:45 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.719630 seconds | Memory: 136.04 MB
+Dec 26, 2024 10:35:46 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.439883 seconds | Memory: 94.54 MB
+Dec 26, 2024 10:35:46 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.476517 seconds | Memory: 9.04 MB
+Dec 26, 2024 10:35:47 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.274066 seconds | Memory: 71.53 MB
+Dec 26, 2024 10:35:47 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.293949 seconds | Memory: 5.52 MB
+Dec 26, 2024 10:35:47 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.390319 seconds | Memory: 23.52 MB
+Dec 26, 2024 10:35:48 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.427759 seconds | Memory: 138.03 MB
+Dec 26, 2024 10:35:48 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.298666 seconds | Memory: 59.03 MB
+Dec 26, 2024 10:35:49 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.382519 seconds | Memory: 56.54 MB
+Dec 26, 2024 10:35:49 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.629453 seconds | Memory: 124.54 MB
+Dec 26, 2024 10:35:50 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.602472 seconds | Memory: 51.55 MB
+Dec 26, 2024 10:35:50 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.380295 seconds | Memory: 132.04 MB
+Dec 26, 2024 10:35:51 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.454702 seconds | Memory: 77.03 MB
+Dec 26, 2024 10:35:51 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.251565 seconds | Memory: 74.53 MB
+Dec 26, 2024 10:35:51 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.200816 seconds | Memory: 107.54 MB
+Dec 26, 2024 10:35:51 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.092608 seconds | Memory: 39.04 MB
+Dec 26, 2024 10:35:51 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.051000 seconds | Memory: 18.03 MB
+Dec 26, 2024 10:35:51 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.023398 seconds | Memory: 9.03 MB
+Dec 26, 2024 10:35:51 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.028391 seconds | Memory: 82.50 MB
+Dec 26, 2024 10:35:51 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.031136 seconds | Memory: 7.53 MB
+Dec 26, 2024 10:35:52 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.011347 seconds | Memory: 25.50 MB
+Dec 26, 2024 10:35:52 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.003957 seconds | Memory: 9.00 MB
+Dec 26, 2024 10:35:52 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.001200 seconds | Memory: 2.50 MB
+Dec 26, 2024 10:35:52 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000308 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:35:52 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000055 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:35:52 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.088265 seconds | Memory: 106.54 MB
+Dec 26, 2024 10:35:53 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.160705 seconds | Memory: 3.03 MB
+Dec 26, 2024 10:35:53 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.282240 seconds | Memory: 169.53 MB
+Dec 26, 2024 10:35:53 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.497950 seconds | Memory: 73.54 MB
+Dec 26, 2024 10:35:54 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.572598 seconds | Memory: 76.04 MB
+Dec 26, 2024 10:35:54 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.309944 seconds | Memory: 123.53 MB
+Dec 26, 2024 10:35:55 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.434377 seconds | Memory: 55.53 MB
+Dec 26, 2024 10:35:55 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.467621 seconds | Memory: 52.54 MB
+Dec 26, 2024 10:35:56 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.791532 seconds | Memory: 4.03 MB
+Dec 26, 2024 10:35:56 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.409861 seconds | Memory: 18.54 MB
+Dec 26, 2024 10:35:57 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.442281 seconds | Memory: 112.54 MB
+Dec 26, 2024 10:35:58 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.776514 seconds | Memory: 35.04 MB
+Dec 26, 2024 10:35:58 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.488850 seconds | Memory: 70.54 MB
+Dec 26, 2024 10:35:59 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.422152 seconds | Memory: 85.53 MB
+Dec 26, 2024 10:35:59 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.694088 seconds | Memory: 145.53 MB
+Dec 26, 2024 10:36:00 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.335417 seconds | Memory: 57.03 MB
+Dec 26, 2024 10:36:00 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.286431 seconds | Memory: 24.54 MB
+Dec 26, 2024 10:36:00 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.376681 seconds | Memory: 88.02 MB
+Dec 26, 2024 10:36:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.150178 seconds | Memory: 94.53 MB
+Dec 26, 2024 10:36:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.219472 seconds | Memory: 60.52 MB
+Dec 26, 2024 10:36:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.119465 seconds | Memory: 79.53 MB
+Dec 26, 2024 10:36:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.200183 seconds | Memory: 39.53 MB
+Dec 26, 2024 10:36:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.277015 seconds | Memory: 144.02 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.174378 seconds | Memory: 104.03 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.111934 seconds | Memory: 85.03 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.068475 seconds | Memory: 83.03 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.033338 seconds | Memory: 32.02 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.011910 seconds | Memory: 50.00 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.005268 seconds | Memory: 23.50 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.002798 seconds | Memory: 11.50 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000509 seconds | Memory: 2.50 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000110 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000042 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000041 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:36:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000026 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:36:03 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.060003 seconds | Memory: 20.03 MB
+Dec 26, 2024 10:36:03 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.193139 seconds | Memory: 72.04 MB
+Dec 26, 2024 10:36:03 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.298421 seconds | Memory: 146.54 MB
+Dec 26, 2024 10:36:04 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.785747 seconds | Memory: 90.05 MB
+Dec 26, 2024 10:36:06 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.480097 seconds | Memory: 1.05 MB
+Dec 26, 2024 10:36:08 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 2.289594 seconds | Memory: 158.57 MB
+Dec 26, 2024 10:36:09 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.201033 seconds | Memory: 60.55 MB
+Dec 26, 2024 10:36:11 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.893463 seconds | Memory: 97.57 MB
+Dec 26, 2024 10:36:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.583775 seconds | Memory: 53.04 MB
+Dec 26, 2024 10:36:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.853564 seconds | Memory: 107.56 MB
+Dec 26, 2024 10:36:13 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.831060 seconds | Memory: 149.55 MB
+Dec 26, 2024 10:36:15 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.572084 seconds | Memory: 9.57 MB
+Dec 26, 2024 10:36:16 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.967140 seconds | Memory: 42.05 MB
+Dec 26, 2024 10:36:17 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.386067 seconds | Memory: 29.56 MB
+Dec 26, 2024 10:36:19 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.887909 seconds | Memory: 58.57 MB
+Dec 26, 2024 10:36:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 3.251702 seconds | Memory: 7.59 MB
+Dec 26, 2024 10:36:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.099743 seconds | Memory: 72.06 MB
+Dec 26, 2024 10:36:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.537583 seconds | Memory: 123.53 MB
+Dec 26, 2024 10:36:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.526381 seconds | Memory: 9.54 MB
+Dec 26, 2024 10:36:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.426406 seconds | Memory: 135.55 MB
+Dec 26, 2024 10:36:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.330179 seconds | Memory: 26.03 MB
+Dec 26, 2024 10:36:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.227771 seconds | Memory: 80.53 MB
+Dec 26, 2024 10:36:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.081799 seconds | Memory: 89.54 MB
+Dec 26, 2024 10:36:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.110322 seconds | Memory: 24.53 MB
+Dec 26, 2024 10:36:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.041507 seconds | Memory: 37.52 MB
+Dec 26, 2024 10:36:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.023151 seconds | Memory: 63.00 MB
+Dec 26, 2024 10:36:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.005139 seconds | Memory: 20.50 MB
+Dec 26, 2024 10:36:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000661 seconds | Memory: 3.00 MB
+Dec 26, 2024 10:36:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000118 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:36:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000050 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:36:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.056585 seconds | Memory: 24.53 MB
+Dec 26, 2024 10:36:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.188695 seconds | Memory: 34.54 MB
+Dec 26, 2024 10:36:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.296786 seconds | Memory: 42.03 MB
+Dec 26, 2024 10:36:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.711669 seconds | Memory: 6.05 MB
+Dec 26, 2024 10:36:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.439444 seconds | Memory: 138.06 MB
+Dec 26, 2024 10:36:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.628205 seconds | Memory: 66.04 MB
+Dec 26, 2024 10:36:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.494936 seconds | Memory: 4.04 MB
+Dec 26, 2024 10:36:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.011504 seconds | Memory: 111.56 MB
+Dec 26, 2024 10:36:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.680177 seconds | Memory: 120.55 MB
+Dec 26, 2024 10:36:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.455535 seconds | Memory: 121.55 MB
+Dec 26, 2024 10:36:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.898585 seconds | Memory: 142.55 MB
+Dec 26, 2024 10:36:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.605754 seconds | Memory: 120.04 MB
+Dec 26, 2024 10:36:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.517284 seconds | Memory: 39.04 MB
+Dec 26, 2024 10:36:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.549641 seconds | Memory: 57.04 MB
+Dec 26, 2024 10:36:37 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.442373 seconds | Memory: 9.04 MB
+Dec 26, 2024 10:36:37 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.323559 seconds | Memory: 163.54 MB
+Dec 26, 2024 10:36:38 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.561759 seconds | Memory: 28.54 MB
+Dec 26, 2024 10:36:38 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.561160 seconds | Memory: 43.53 MB
+Dec 26, 2024 10:36:39 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.621084 seconds | Memory: 21.04 MB
+Dec 26, 2024 10:36:39 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.444035 seconds | Memory: 139.54 MB
+Dec 26, 2024 10:36:40 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.374872 seconds | Memory: 125.03 MB
+Dec 26, 2024 10:36:40 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.306002 seconds | Memory: 59.53 MB
+Dec 26, 2024 10:36:40 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.251048 seconds | Memory: 98.03 MB
+Dec 26, 2024 10:36:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.170230 seconds | Memory: 2.03 MB
+Dec 26, 2024 10:36:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.069692 seconds | Memory: 76.03 MB
+Dec 26, 2024 10:36:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.032448 seconds | Memory: 33.53 MB
+Dec 26, 2024 10:36:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.014794 seconds | Memory: 62.00 MB
+Dec 26, 2024 10:36:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.006055 seconds | Memory: 23.00 MB
+Dec 26, 2024 10:36:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.003652 seconds | Memory: 9.50 MB
+Dec 26, 2024 10:36:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000450 seconds | Memory: 1.00 MB
+Dec 26, 2024 10:36:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000088 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:36:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000019 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:36:42 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.059494 seconds | Memory: 24.53 MB
+Dec 26, 2024 10:36:42 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.163242 seconds | Memory: 170.04 MB
+Dec 26, 2024 10:36:42 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.595969 seconds | Memory: 101.04 MB
+Dec 26, 2024 10:36:43 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.016278 seconds | Memory: 95.05 MB
+Dec 26, 2024 10:36:44 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.767727 seconds | Memory: 158.05 MB
+Dec 26, 2024 10:36:46 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.592191 seconds | Memory: 108.05 MB
+Dec 26, 2024 10:36:48 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 2.319671 seconds | Memory: 34.56 MB
+Dec 26, 2024 10:36:54 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 5.652434 seconds | Memory: 50.60 MB
+Dec 26, 2024 10:37:05 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 11.408885 seconds | Memory: 72.89 MB
+Dec 26, 2024 10:37:09 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 4.233942 seconds | Memory: 156.08 MB
+Dec 26, 2024 10:37:20 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 10.369944 seconds | Memory: 2.71 MB
+Dec 26, 2024 10:37:23 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 2.885158 seconds | Memory: 73.07 MB
+Dec 26, 2024 10:37:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 2.928051 seconds | Memory: 96.57 MB
+Dec 26, 2024 10:37:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 3.083466 seconds | Memory: 67.07 MB
+Dec 26, 2024 10:37:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 2.337456 seconds | Memory: 178.07 MB
+Dec 26, 2024 10:37:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.591769 seconds | Memory: 78.57 MB
+Dec 26, 2024 10:37:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.718625 seconds | Memory: 4.55 MB
+Dec 26, 2024 10:37:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.814041 seconds | Memory: 34.55 MB
+Dec 26, 2024 10:37:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.535502 seconds | Memory: 117.03 MB
+Dec 26, 2024 10:37:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.158823 seconds | Memory: 51.53 MB
+Dec 26, 2024 10:37:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.118571 seconds | Memory: 88.03 MB
+Dec 26, 2024 10:37:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.052740 seconds | Memory: 56.03 MB
+Dec 26, 2024 10:37:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.051464 seconds | Memory: 11.53 MB
+Dec 26, 2024 10:37:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.021360 seconds | Memory: 80.50 MB
+Dec 26, 2024 10:37:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.017099 seconds | Memory: 52.00 MB
+Dec 26, 2024 10:37:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.016463 seconds | Memory: 47.50 MB
+Dec 26, 2024 10:37:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.003663 seconds | Memory: 9.50 MB
+Dec 26, 2024 10:37:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000640 seconds | Memory: 1.50 MB
+Dec 26, 2024 10:37:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000099 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:37:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000066 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:37:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000039 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:37:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.048717 seconds | Memory: 80.53 MB
+Dec 26, 2024 10:37:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.185451 seconds | Memory: 30.04 MB
+Dec 26, 2024 10:37:37 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.430038 seconds | Memory: 20.54 MB
+Dec 26, 2024 10:37:37 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.483279 seconds | Memory: 98.54 MB
+Dec 26, 2024 10:37:38 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.545997 seconds | Memory: 13.03 MB
+Dec 26, 2024 10:37:39 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.260467 seconds | Memory: 102.56 MB
+Dec 26, 2024 10:37:42 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 2.329096 seconds | Memory: 194.07 MB
+Dec 26, 2024 10:37:44 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 2.626585 seconds | Memory: 135.57 MB
+Dec 26, 2024 10:37:47 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 2.383781 seconds | Memory: 125.56 MB
+Dec 26, 2024 10:37:50 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 3.662847 seconds | Memory: 63.07 MB
+Dec 26, 2024 10:37:57 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 6.264689 seconds | Memory: 37.09 MB
+Dec 26, 2024 10:38:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 3.988249 seconds | Memory: 110.08 MB
+Dec 26, 2024 10:38:04 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 3.008331 seconds | Memory: 98.09 MB
+Dec 26, 2024 10:38:05 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.490285 seconds | Memory: 74.07 MB
+Dec 26, 2024 10:38:06 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.133384 seconds | Memory: 136.57 MB
+Dec 26, 2024 10:38:07 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.022581 seconds | Memory: 35.56 MB
+Dec 26, 2024 10:38:08 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.516098 seconds | Memory: 62.04 MB
+Dec 26, 2024 10:38:08 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.256081 seconds | Memory: 14.54 MB
+Dec 26, 2024 10:38:09 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.392004 seconds | Memory: 161.03 MB
+Dec 26, 2024 10:38:09 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.453883 seconds | Memory: 87.53 MB
+Dec 26, 2024 10:38:10 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.803680 seconds | Memory: 166.55 MB
+Dec 26, 2024 10:38:11 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.252880 seconds | Memory: 71.57 MB
+Dec 26, 2024 10:38:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.443952 seconds | Memory: 79.54 MB
+Dec 26, 2024 10:38:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.201341 seconds | Memory: 17.03 MB
+Dec 26, 2024 10:38:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.100489 seconds | Memory: 145.53 MB
+Dec 26, 2024 10:38:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.058081 seconds | Memory: 28.54 MB
+Dec 26, 2024 10:38:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.032856 seconds | Memory: 39.53 MB
+Dec 26, 2024 10:38:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.004984 seconds | Memory: 19.50 MB
+Dec 26, 2024 10:38:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000738 seconds | Memory: 2.50 MB
+Dec 26, 2024 10:38:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000122 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:38:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000034 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:38:13 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.104388 seconds | Memory: 37.53 MB
+Dec 26, 2024 10:38:13 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.219067 seconds | Memory: 58.54 MB
+Dec 26, 2024 10:38:13 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.218272 seconds | Memory: 3.54 MB
+Dec 26, 2024 10:38:14 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.367800 seconds | Memory: 107.03 MB
+Dec 26, 2024 10:38:14 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.667791 seconds | Memory: 94.55 MB
+Dec 26, 2024 10:38:15 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.734995 seconds | Memory: 132.03 MB
+Dec 26, 2024 10:38:16 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.275636 seconds | Memory: 1.06 MB
+Dec 26, 2024 10:38:18 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.380914 seconds | Memory: 150.57 MB
+Dec 26, 2024 10:38:19 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.480735 seconds | Memory: 1.07 MB
+Dec 26, 2024 10:38:21 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.385903 seconds | Memory: 155.55 MB
+Dec 26, 2024 10:38:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.158983 seconds | Memory: 44.05 MB
+Dec 26, 2024 10:38:22 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.608057 seconds | Memory: 26.54 MB
+Dec 26, 2024 10:38:24 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.247707 seconds | Memory: 31.07 MB
+Dec 26, 2024 10:38:25 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.223361 seconds | Memory: 123.06 MB
+Dec 26, 2024 10:38:26 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.320210 seconds | Memory: 117.56 MB
+Dec 26, 2024 10:38:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.512181 seconds | Memory: 80.53 MB
+Dec 26, 2024 10:38:27 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.379983 seconds | Memory: 134.03 MB
+Dec 26, 2024 10:38:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.325937 seconds | Memory: 60.54 MB
+Dec 26, 2024 10:38:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.484459 seconds | Memory: 63.02 MB
+Dec 26, 2024 10:38:28 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.260361 seconds | Memory: 6.03 MB
+Dec 26, 2024 10:38:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.265526 seconds | Memory: 77.53 MB
+Dec 26, 2024 10:38:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.139722 seconds | Memory: 119.53 MB
+Dec 26, 2024 10:38:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.108006 seconds | Memory: 77.53 MB
+Dec 26, 2024 10:38:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.077557 seconds | Memory: 44.54 MB
+Dec 26, 2024 10:38:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.039153 seconds | Memory: 7.03 MB
+Dec 26, 2024 10:38:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.026360 seconds | Memory: 62.50 MB
+Dec 26, 2024 10:38:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.006378 seconds | Memory: 23.50 MB
+Dec 26, 2024 10:38:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.001001 seconds | Memory: 3.50 MB
+Dec 26, 2024 10:38:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000144 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:38:29 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000034 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:38:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.048638 seconds | Memory: 24.53 MB
+Dec 26, 2024 10:38:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.187674 seconds | Memory: 136.53 MB
+Dec 26, 2024 10:38:30 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.234066 seconds | Memory: 69.52 MB
+Dec 26, 2024 10:38:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.279100 seconds | Memory: 134.54 MB
+Dec 26, 2024 10:38:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.200809 seconds | Memory: 57.04 MB
+Dec 26, 2024 10:38:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.370809 seconds | Memory: 41.03 MB
+Dec 26, 2024 10:38:31 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.301096 seconds | Memory: 166.03 MB
+Dec 26, 2024 10:38:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.396412 seconds | Memory: 33.04 MB
+Dec 26, 2024 10:38:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.145519 seconds | Memory: 127.04 MB
+Dec 26, 2024 10:38:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.171971 seconds | Memory: 85.54 MB
+Dec 26, 2024 10:38:32 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.217747 seconds | Memory: 65.53 MB
+Dec 26, 2024 10:38:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.184453 seconds | Memory: 81.03 MB
+Dec 26, 2024 10:38:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.368001 seconds | Memory: 60.54 MB
+Dec 26, 2024 10:38:33 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.304691 seconds | Memory: 3.03 MB
+Dec 26, 2024 10:38:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.425573 seconds | Memory: 27.03 MB
+Dec 26, 2024 10:38:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.251289 seconds | Memory: 78.04 MB
+Dec 26, 2024 10:38:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.079955 seconds | Memory: 93.53 MB
+Dec 26, 2024 10:38:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.110151 seconds | Memory: 65.03 MB
+Dec 26, 2024 10:38:34 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.144980 seconds | Memory: 121.03 MB
+Dec 26, 2024 10:38:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.146675 seconds | Memory: 1.03 MB
+Dec 26, 2024 10:38:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.265907 seconds | Memory: 20.03 MB
+Dec 26, 2024 10:38:35 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.263608 seconds | Memory: 31.03 MB
+Dec 26, 2024 10:38:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.335637 seconds | Memory: 54.53 MB
+Dec 26, 2024 10:38:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.170321 seconds | Memory: 65.03 MB
+Dec 26, 2024 10:38:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.111973 seconds | Memory: 17.53 MB
+Dec 26, 2024 10:38:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.047739 seconds | Memory: 50.03 MB
+Dec 26, 2024 10:38:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.007891 seconds | Memory: 27.00 MB
+Dec 26, 2024 10:38:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.004207 seconds | Memory: 10.00 MB
+Dec 26, 2024 10:38:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.001848 seconds | Memory: 5.00 MB
+Dec 26, 2024 10:38:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000443 seconds | Memory: 1.00 MB
+Dec 26, 2024 10:38:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000102 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:38:36 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000049 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:38:37 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.105919 seconds | Memory: 102.03 MB
+Dec 26, 2024 10:38:37 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.254515 seconds | Memory: 128.53 MB
+Dec 26, 2024 10:38:38 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.403695 seconds | Memory: 99.04 MB
+Dec 26, 2024 10:38:38 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.711377 seconds | Memory: 162.04 MB
+Dec 26, 2024 10:38:39 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.386381 seconds | Memory: 95.54 MB
+Dec 26, 2024 10:38:39 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.487374 seconds | Memory: 60.04 MB
+Dec 26, 2024 10:38:39 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.176378 seconds | Memory: 107.03 MB
+Dec 26, 2024 10:38:40 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.402915 seconds | Memory: 95.54 MB
+Dec 26, 2024 10:38:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.084115 seconds | Memory: 14.55 MB
+Dec 26, 2024 10:38:41 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.473504 seconds | Memory: 147.04 MB
+Dec 26, 2024 10:38:42 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.726337 seconds | Memory: 3.55 MB
+Dec 26, 2024 10:38:43 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.276064 seconds | Memory: 128.55 MB
+Dec 26, 2024 10:38:44 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.430307 seconds | Memory: 147.04 MB
+Dec 26, 2024 10:38:45 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.877103 seconds | Memory: 29.55 MB
+Dec 26, 2024 10:38:46 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.667839 seconds | Memory: 25.53 MB
+Dec 26, 2024 10:38:47 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.026136 seconds | Memory: 20.04 MB
+Dec 26, 2024 10:38:47 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.361365 seconds | Memory: 54.54 MB
+Dec 26, 2024 10:38:48 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.996770 seconds | Memory: 65.03 MB
+Dec 26, 2024 10:38:48 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.415101 seconds | Memory: 26.54 MB
+Dec 26, 2024 10:38:49 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.467158 seconds | Memory: 134.54 MB
+Dec 26, 2024 10:38:49 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.251510 seconds | Memory: 33.53 MB
+Dec 26, 2024 10:38:49 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.093821 seconds | Memory: 20.54 MB
+Dec 26, 2024 10:38:49 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.067258 seconds | Memory: 64.52 MB
+Dec 26, 2024 10:38:49 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.032987 seconds | Memory: 71.00 MB
+Dec 26, 2024 10:38:49 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.026120 seconds | Memory: 57.00 MB
+Dec 26, 2024 10:38:50 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.013948 seconds | Memory: 31.50 MB
+Dec 26, 2024 10:38:50 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.002384 seconds | Memory: 5.00 MB
+Dec 26, 2024 10:38:50 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000350 seconds | Memory: 1.00 MB
+Dec 26, 2024 10:38:50 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000116 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:38:50 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000035 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:38:50 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.094132 seconds | Memory: 20.03 MB
+Dec 26, 2024 10:38:51 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.305123 seconds | Memory: 78.03 MB
+Dec 26, 2024 10:38:51 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.359345 seconds | Memory: 77.53 MB
+Dec 26, 2024 10:38:52 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.507752 seconds | Memory: 83.04 MB
+Dec 26, 2024 10:38:53 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.994916 seconds | Memory: 12.04 MB
+Dec 26, 2024 10:38:53 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.585170 seconds | Memory: 38.53 MB
+Dec 26, 2024 10:38:54 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.738053 seconds | Memory: 49.54 MB
+Dec 26, 2024 10:38:54 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.390766 seconds | Memory: 88.03 MB
+Dec 26, 2024 10:38:55 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.538627 seconds | Memory: 113.53 MB
+Dec 26, 2024 10:38:55 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.284560 seconds | Memory: 36.04 MB
+Dec 26, 2024 10:38:56 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.496772 seconds | Memory: 88.53 MB
+Dec 26, 2024 10:38:56 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.577383 seconds | Memory: 50.03 MB
+Dec 26, 2024 10:38:57 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.684794 seconds | Memory: 117.54 MB
+Dec 26, 2024 10:38:57 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.318213 seconds | Memory: 69.54 MB
+Dec 26, 2024 10:38:58 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.567969 seconds | Memory: 95.04 MB
+Dec 26, 2024 10:38:58 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.453911 seconds | Memory: 23.03 MB
+Dec 26, 2024 10:38:59 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.355466 seconds | Memory: 48.54 MB
+Dec 26, 2024 10:38:59 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.625865 seconds | Memory: 96.03 MB
+Dec 26, 2024 10:39:00 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.248933 seconds | Memory: 78.03 MB
+Dec 26, 2024 10:39:00 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.267316 seconds | Memory: 139.03 MB
+Dec 26, 2024 10:39:00 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.124762 seconds | Memory: 13.54 MB
+Dec 26, 2024 10:39:00 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.092873 seconds | Memory: 109.03 MB
+Dec 26, 2024 10:39:00 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.056677 seconds | Memory: 37.03 MB
+Dec 26, 2024 10:39:00 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.053998 seconds | Memory: 23.52 MB
+Dec 26, 2024 10:39:00 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.052464 seconds | Memory: 49.53 MB
+Dec 26, 2024 10:39:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.033230 seconds | Memory: 23.03 MB
+Dec 26, 2024 10:39:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.011879 seconds | Memory: 49.50 MB
+Dec 26, 2024 10:39:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.010924 seconds | Memory: 24.00 MB
+Dec 26, 2024 10:39:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.003166 seconds | Memory: 14.00 MB
+Dec 26, 2024 10:39:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000989 seconds | Memory: 4.50 MB
+Dec 26, 2024 10:39:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000133 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:39:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000044 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:39:01 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.078790 seconds | Memory: 33.52 MB
+Dec 26, 2024 10:39:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.193650 seconds | Memory: 159.53 MB
+Dec 26, 2024 10:39:02 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.291399 seconds | Memory: 73.53 MB
+Dec 26, 2024 10:39:03 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.679380 seconds | Memory: 118.05 MB
+Dec 26, 2024 10:39:03 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.634925 seconds | Memory: 52.03 MB
+Dec 26, 2024 10:39:05 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.327741 seconds | Memory: 38.05 MB
+Dec 26, 2024 10:39:07 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 2.431974 seconds | Memory: 114.05 MB
+Dec 26, 2024 10:39:09 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.792859 seconds | Memory: 67.05 MB
+Dec 26, 2024 10:39:10 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.511352 seconds | Memory: 30.55 MB
+Dec 26, 2024 10:39:11 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.005905 seconds | Memory: 71.54 MB
+Dec 26, 2024 10:39:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.449546 seconds | Memory: 10.53 MB
+Dec 26, 2024 10:39:12 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.618563 seconds | Memory: 1.03 MB
+Dec 26, 2024 10:39:13 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.497234 seconds | Memory: 52.54 MB
+Dec 26, 2024 10:39:14 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 1.141010 seconds | Memory: 131.06 MB
+Dec 26, 2024 10:39:15 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.753093 seconds | Memory: 62.06 MB
+Dec 26, 2024 10:39:15 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.402712 seconds | Memory: 96.03 MB
+Dec 26, 2024 10:39:16 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.354955 seconds | Memory: 66.03 MB
+Dec 26, 2024 10:39:16 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.285180 seconds | Memory: 20.04 MB
+Dec 26, 2024 10:39:17 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.578372 seconds | Memory: 147.54 MB
+Dec 26, 2024 10:39:17 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.525477 seconds | Memory: 68.05 MB
+Dec 26, 2024 10:39:18 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.622402 seconds | Memory: 122.04 MB
+Dec 26, 2024 10:39:18 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.277321 seconds | Memory: 54.54 MB
+Dec 26, 2024 10:39:18 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.168856 seconds | Memory: 126.53 MB
+Dec 26, 2024 10:39:18 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.089903 seconds | Memory: 17.02 MB
+Dec 26, 2024 10:39:19 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.079748 seconds | Memory: 63.54 MB
+Dec 26, 2024 10:39:19 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.091019 seconds | Memory: 111.53 MB
+Dec 26, 2024 10:39:19 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.007753 seconds | Memory: 34.50 MB
+Dec 26, 2024 10:39:19 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.001161 seconds | Memory: 5.00 MB
+Dec 26, 2024 10:39:19 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000128 seconds | Memory: 0.50 MB
+Dec 26, 2024 10:39:19 PM com.game.profiller.PerformanceLogger logPerformance
+INFO: Method: AlphaBeta | Time: 0.000027 seconds | Memory: 0.50 MB
